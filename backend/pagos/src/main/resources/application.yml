@@ -1,0 +1,19 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://127.0.0.1:9000
+      client:
+        registration:
+          msvc-pagos-client:
+            provider: spring
+            client-id: pagos-client
+            client-secret: secret
+            authorization-grant-type: authorization_code
+            redirect-uri: http://127.0.0.1:8090/authorized
+            scope: read
+            client-name: msvc-pagos-client
+        provider:
+          spring:
+            issuer-uri: http://127.0.0.1:9000

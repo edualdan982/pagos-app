@@ -90,6 +90,7 @@ public class DataInitConfig implements IDataInitConfig {
         try {
           conn.close();
         } catch (SQLException e) {
+          log.error("No se pudo completar el proceso de la sentencia SQL.");
         }
     }
 

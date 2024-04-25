@@ -2,7 +2,6 @@ package acuario.pagos.entity.tests;
 
 import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
-import jakarta.persistence.Table;
 
 @MappedSuperclass
 public class Person {
