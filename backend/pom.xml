@@ -11,18 +11,17 @@
 	</parent>
 
 	<groupId>acuario</groupId>
-	<artifactId>cloud</artifactId>
+	<artifactId>msvc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<description>Empaquetador principal</description>
 
 	<modules>
-		<module>auth-server</module>
-		<module>client-app</module>
-		<module>auth</module>
-		<module>pagos</module>
-		<module>fact</module>
+		<module>msvc-auth</module>
+		<module>msvc-client</module>
+		<module>msvc-pagos</module>
+		<module>msvc-fact</module>
 	</modules>
 
 	<properties>
