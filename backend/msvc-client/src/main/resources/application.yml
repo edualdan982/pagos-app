@@ -12,16 +12,16 @@ spring:
       client:
         registration:
           # Este es el clientName que se registra en el auth-server
-          client-app:
+          msvc-client:
             provider: spring
-            client-id: client-app-id
+            client-id: msvc-client-id
             client-secret: 123456
             authorization-grant-type: authorization_code
             redirect-uri: "http://127.0.0.1:8091/authorized"
             scope:
             - openid
             - read
-            client-name: client-app
+            client-name: msvc-client
             
         provider:
           spring:

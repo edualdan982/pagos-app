@@ -966,3 +966,474 @@ Caused by: java.lang.IllegalArgumentException: Registered client must be unique.
 2024-04-28T23:13:31.971-04:00  INFO 14524 --- [auth-server] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-04-28T23:13:31.973-04:00  INFO 14524 --- [auth-server] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-04-28T23:13:32.263-04:00  INFO 14524 --- [auth-server] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-29T10:03:40.023-04:00  INFO 16980 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : Starting AuthServerApplication using Java 17.0.4.1 with PID 16980 (D:\proyectos\acuario\pagos-app\backend\msvc-auth\target\classes started by dtic in D:\proyectos\acuario\pagos-app\backend\msvc-auth)
+2024-04-29T10:03:40.024-04:00  INFO 16980 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-04-29T10:03:40.067-04:00  INFO 16980 --- [auth-server] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\dtic\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/dtic/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-04-29T10:03:40.067-04:00  INFO 16980 --- [auth-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-29T10:03:40.067-04:00  INFO 16980 --- [auth-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-29T10:03:40.737-04:00  INFO 16980 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29T10:03:40.795-04:00  INFO 16980 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
+2024-04-29T10:03:41.444-04:00  INFO 16980 --- [auth-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2024-04-29T10:03:41.465-04:00  INFO 16980 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-29T10:03:41.466-04:00  INFO 16980 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-29T10:03:41.539-04:00  INFO 16980 --- [auth-server] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-29T10:03:41.539-04:00  INFO 16980 --- [auth-server] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1472 ms
+2024-04-29T10:03:41.834-04:00  INFO 16980 --- [auth-server] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29T10:03:41.921-04:00  INFO 16980 --- [auth-server] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-29T10:03:41.961-04:00  INFO 16980 --- [auth-server] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-29T10:03:42.199-04:00  INFO 16980 --- [auth-server] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29T10:03:42.216-04:00  INFO 16980 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-29T10:03:42.480-04:00  INFO 16980 --- [auth-server] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@302dea3b
+2024-04-29T10:03:42.482-04:00  INFO 16980 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-29T10:03:43.219-04:00  INFO 16980 --- [auth-server] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29T10:03:43.827-04:00  INFO 16980 --- [auth-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T10:03:44.041-04:00  INFO 16980 --- [auth-server] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-29T10:03:44.485-04:00  WARN 16980 --- [auth-server] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-29T10:03:45.175-04:00 TRACE 16980 --- [auth-server] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	a.m.a.c.InfoController:
+	{GET [/info/estado]}: info()
+	{GET [/info]}: encriptarClave(String)
+	{GET [/info/clave]}: compararClaves(String,String)
+2024-04-29T10:03:45.182-04:00 TRACE 16980 --- [auth-server] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2024-04-29T10:03:45.186-04:00 DEBUG 16980 --- [auth-server] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2024-04-29T10:03:45.192-04:00 DEBUG 16980 --- [auth-server] [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2024-04-29T10:03:45.270-04:00 TRACE 16980 --- [auth-server] [restartedMain] o.s.w.s.f.support.RouterFunctionMapping  : 0 RouterFunction(s) in 'routerFunctionMapping'
+2024-04-29T10:03:45.287-04:00 TRACE 16980 --- [auth-server] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-04-29T10:03:45.288-04:00 TRACE 16980 --- [auth-server] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-04-29T10:03:45.289-04:00 DEBUG 16980 --- [auth-server] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-04-29T10:03:45.374-04:00  INFO 16980 --- [auth-server] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer$$Lambda$1406/0x000000080164a020@83fec7a with [org.springframework.security.web.session.DisableEncodeUrlFilter@2ebef03d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1dc98b8e, org.springframework.security.web.context.SecurityContextHolderFilter@380857b9, org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.AuthorizationServerContextFilter@3dda32b3, org.springframework.security.web.header.HeaderWriterFilter@11e68bea, org.springframework.web.filter.CorsFilter@720f09a9, org.springframework.security.web.csrf.CsrfFilter@4cab1e5c, org.springframework.security.oauth2.server.authorization.oidc.web.OidcLogoutEndpointFilter@2968f113, org.springframework.security.web.authentication.logout.LogoutFilter@4abd25ac, org.springframework.security.oauth2.server.authorization.web.OAuth2AuthorizationServerMetadataEndpointFilter@5081b594, org.springframework.security.oauth2.server.authorization.web.OAuth2AuthorizationEndpointFilter@29ca2472, org.springframework.security.oauth2.server.authorization.web.OAuth2DeviceVerificationEndpointFilter@b1492d4, org.springframework.security.oauth2.server.authorization.oidc.web.OidcProviderConfigurationEndpointFilter@3fac0c2c, org.springframework.security.oauth2.server.authorization.web.NimbusJwkSetEndpointFilter@3a216962, org.springframework.security.oauth2.server.authorization.web.OAuth2ClientAuthenticationFilter@4a476934, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@2512dace, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14d04f6c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@575d2665, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52467ae, org.springframework.security.web.access.ExceptionTranslationFilter@5fe3b21a, org.springframework.security.web.access.intercept.AuthorizationFilter@75d121b, org.springframework.security.oauth2.server.authorization.web.OAuth2TokenEndpointFilter@34fe24ad, org.springframework.security.oauth2.server.authorization.web.OAuth2TokenIntrospectionEndpointFilter@27deae31, org.springframework.security.oauth2.server.authorization.web.OAuth2TokenRevocationEndpointFilter@28bf323c, org.springframework.security.oauth2.server.authorization.web.OAuth2DeviceAuthorizationEndpointFilter@2aa51748, org.springframework.security.oauth2.server.authorization.oidc.web.OidcUserInfoEndpointFilter@3f47a]
+2024-04-29T10:03:45.435-04:00  INFO 16980 --- [auth-server] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@32405ecb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7fcc4288, org.springframework.security.web.context.SecurityContextHolderFilter@454d0933, org.springframework.security.web.header.HeaderWriterFilter@1edfa1c, org.springframework.web.filter.CorsFilter@30f2f021, org.springframework.security.web.authentication.logout.LogoutFilter@15eea7b4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@52738036, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@9cb1205, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7e4ea439, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@567cf82e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@671829e0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e481b3d, org.springframework.security.web.access.ExceptionTranslationFilter@3a61669f, org.springframework.security.web.access.intercept.AuthorizationFilter@6295bc8c]
+2024-04-29T10:03:45.552-04:00 DEBUG 16980 --- [auth-server] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-29T10:03:45.584-04:00 DEBUG 16980 --- [auth-server] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-29T10:03:45.689-04:00  INFO 16980 --- [auth-server] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-29T10:03:45.720-04:00  INFO 16980 --- [auth-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9000 (http) with context path ''
+2024-04-29T10:03:45.728-04:00  INFO 16980 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : Started AuthServerApplication in 6.071 seconds (process running for 6.541)
+2024-04-29T10:05:09.425-04:00  INFO 16980 --- [auth-server] [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-29T10:05:09.426-04:00  INFO 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-29T10:05:09.426-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@5bdd8561
+2024-04-29T10:05:09.428-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@69e18ee3
+2024-04-29T10:05:09.428-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.theme.FixedThemeResolver@3fa83757
+2024-04-29T10:05:09.429-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected DefaultRequestToViewNameTranslator
+2024-04-29T10:05:09.430-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected SessionFlashMapManager
+2024-04-29T10:05:09.430-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-04-29T10:05:09.431-04:00  INFO 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-04-29T10:05:09.444-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /.well-known/openid-configuration
+2024-04-29T10:05:26.166-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /login/oauth2/code/msvc-client
+2024-04-29T10:05:26.169-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-2] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=edual, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=8DA739EB0604A21C828BBF5123E66A01], Granted Authorities=[ROLE_USER]]]
+2024-04-29T10:05:26.170-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /login/oauth2/code/msvc-client
+2024-04-29T10:05:26.172-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/login/oauth2/code/msvc-client", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-04-29T10:05:26.176-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]] and 4 interceptors
+2024-04-29T10:05:26.184-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-04-29T10:05:26.185-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource login/oauth2/code/msvc-client.]
+2024-04-29T10:05:26.186-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2024-04-29T10:05:26.187-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND, headers={masked}
+2024-04-29T10:05:26.191-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error], produces [text/html]}, { [/error]}]
+2024-04-29T10:05:26.193-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-04-29T10:05:26.193-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-2] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=edual, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=8DA739EB0604A21C828BBF5123E66A01], Granted Authorities=[ROLE_USER]]]
+2024-04-29T10:05:26.194-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-04-29T10:05:26.195-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-04-29T10:05:26.195-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error], produces [text/html]}, { [/error]}]
+2024-04-29T10:05:26.197-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2024-04-29T10:05:26.206-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.web.method.HandlerMethod             : Arguments: [SecurityContextHolderAwareRequestWrapper[ FirewalledRequest[ org.apache.catalina.core.ApplicationHttpRequest@28a42b12]], org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleHttpServletResponse@6554b5b4]
+2024-04-29T10:05:26.218-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2024-04-29T10:05:26.219-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Rendering view [org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$StaticView@4d52be02] 
+2024-04-29T10:05:26.225-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404, headers={masked}
+2024-04-29T10:05:35.608-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-4] o.s.security.web.FilterChainProxy        : Securing POST /login
+2024-04-29T10:05:35.785-04:00  INFO 16980 --- [auth-server] [http-nio-9000-exec-4] a.msvc.auth.service.auth.UsuarioService  : Usuario login: edual
+2024-04-29T10:05:35.848-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-4] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to authenticate since password does not match stored value
+2024-04-29T10:05:35.849-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-4] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /login?error
+2024-04-29T10:05:35.857-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /login?error
+2024-04-29T10:05:38.962-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /login
+2024-04-29T10:05:38.972-04:00  INFO 16980 --- [auth-server] [http-nio-9000-exec-5] a.msvc.auth.service.auth.UsuarioService  : Usuario login: edual
+2024-04-29T10:05:39.030-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-5] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2024-04-29T10:05:39.067-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-5] .s.ChangeSessionIdAuthenticationStrategy : Changed session id from AE42C3E8D7237C2F8A0253C2BF1AE6A9
+2024-04-29T10:05:39.068-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-5] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=edual, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=AE42C3E8D7237C2F8A0253C2BF1AE6A9], Granted Authorities=[ROLE_USER]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@5ece7f10]
+2024-04-29T10:05:39.069-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-5] w.a.UsernamePasswordAuthenticationFilter : Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=edual, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=AE42C3E8D7237C2F8A0253C2BF1AE6A9], Granted Authorities=[ROLE_USER]]
+2024-04-29T10:05:39.070-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-5] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /
+2024-04-29T10:05:39.089-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /
+2024-04-29T10:05:39.089-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=edual, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=AE42C3E8D7237C2F8A0253C2BF1AE6A9], Granted Authorities=[ROLE_USER]]]
+2024-04-29T10:05:39.089-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /
+2024-04-29T10:05:39.090-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-04-29T10:05:39.090-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]] and 4 interceptors
+2024-04-29T10:05:39.091-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-6] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-04-29T10:05:39.092-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .]
+2024-04-29T10:05:39.092-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2024-04-29T10:05:39.092-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND, headers={masked}
+2024-04-29T10:05:39.093-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-04-29T10:05:39.094-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /error
+2024-04-29T10:05:39.094-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=edual, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=AE42C3E8D7237C2F8A0253C2BF1AE6A9], Granted Authorities=[ROLE_USER]]]
+2024-04-29T10:05:39.094-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /error
+2024-04-29T10:05:39.094-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-04-29T10:05:39.095-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-04-29T10:05:39.095-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-04-29T10:05:39.095-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-6] o.s.web.method.HandlerMethod             : Arguments: [SecurityContextHolderAwareRequestWrapper[ FirewalledRequest[ org.apache.catalina.core.ApplicationHttpRequest@6ece29ad]]]
+2024-04-29T10:05:39.099-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-04-29T10:05:39.099-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Apr 29 10:05:39 BOT 2024, status=404, error=Not Found, trace=org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:189)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:175)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+, message=No static resource ., path=/}]
+2024-04-29T10:05:39.124-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2024-04-29T10:05:39.125-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404, headers={masked}
+2024-04-29T10:13:45.220-04:00  INFO 16980 --- [auth-server] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-29T10:13:45.238-04:00  INFO 16980 --- [auth-server] [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T10:13:45.239-04:00  INFO 16980 --- [auth-server] [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-29T10:13:45.279-04:00  INFO 16980 --- [auth-server] [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-29T10:13:45.404-04:00  INFO 16980 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : Starting AuthServerApplication using Java 17.0.4.1 with PID 16980 (D:\proyectos\acuario\pagos-app\backend\msvc-auth\target\classes started by dtic in D:\proyectos\acuario\pagos-app\backend\msvc-auth)
+2024-04-29T10:13:45.404-04:00  INFO 16980 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-04-29T10:13:45.574-04:00  INFO 16980 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29T10:13:45.585-04:00  INFO 16980 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2024-04-29T10:13:45.667-04:00  INFO 16980 --- [auth-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2024-04-29T10:13:45.668-04:00  INFO 16980 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-29T10:13:45.668-04:00  INFO 16980 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-29T10:13:45.687-04:00  INFO 16980 --- [auth-server] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-29T10:13:45.688-04:00  INFO 16980 --- [auth-server] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 281 ms
+2024-04-29T10:13:45.720-04:00  INFO 16980 --- [auth-server] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29T10:13:45.723-04:00  INFO 16980 --- [auth-server] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-29T10:13:45.727-04:00  INFO 16980 --- [auth-server] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-29T10:13:45.728-04:00  INFO 16980 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-04-29T10:13:45.876-04:00  INFO 16980 --- [auth-server] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection oracle.jdbc.driver.T4CConnection@100b8aa0
+2024-04-29T10:13:45.876-04:00  INFO 16980 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-04-29T10:13:45.923-04:00  INFO 16980 --- [auth-server] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-29T10:13:46.472-04:00  INFO 16980 --- [auth-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29T10:13:46.535-04:00  WARN 16980 --- [auth-server] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-29T10:13:46.540-04:00 DEBUG 16980 --- [auth-server] [restartedMain] swordEncoderAuthenticationManagerBuilder : No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-04-29T10:13:46.679-04:00 TRACE 16980 --- [auth-server] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	a.m.a.c.InfoController:
+	{GET [/info/estado]}: info()
+	{GET [/info]}: encriptarClave(String)
+	{GET [/info/clave]}: compararClaves(String,String)
+2024-04-29T10:13:46.683-04:00 TRACE 16980 --- [auth-server] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2024-04-29T10:13:46.684-04:00 DEBUG 16980 --- [auth-server] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2024-04-29T10:13:46.686-04:00 DEBUG 16980 --- [auth-server] [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2024-04-29T10:13:46.702-04:00 TRACE 16980 --- [auth-server] [restartedMain] o.s.w.s.f.support.RouterFunctionMapping  : 0 RouterFunction(s) in 'routerFunctionMapping'
+2024-04-29T10:13:46.704-04:00 TRACE 16980 --- [auth-server] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-04-29T10:13:46.704-04:00 TRACE 16980 --- [auth-server] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-04-29T10:13:46.705-04:00 DEBUG 16980 --- [auth-server] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-04-29T10:13:46.714-04:00  INFO 16980 --- [auth-server] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer$$Lambda$1406/0x000000080164a020@5a106b81 with [org.springframework.security.web.session.DisableEncodeUrlFilter@1674a36d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@66daf83b, org.springframework.security.web.context.SecurityContextHolderFilter@137b453d, org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.AuthorizationServerContextFilter@2d52af1a, org.springframework.security.web.header.HeaderWriterFilter@7e6375ef, org.springframework.web.filter.CorsFilter@153ef146, org.springframework.security.web.csrf.CsrfFilter@12b8b044, org.springframework.security.oauth2.server.authorization.oidc.web.OidcLogoutEndpointFilter@59581aa6, org.springframework.security.web.authentication.logout.LogoutFilter@4026832c, org.springframework.security.oauth2.server.authorization.web.OAuth2AuthorizationServerMetadataEndpointFilter@76ee010d, org.springframework.security.oauth2.server.authorization.web.OAuth2AuthorizationEndpointFilter@7681bfbd, org.springframework.security.oauth2.server.authorization.web.OAuth2DeviceVerificationEndpointFilter@5b3f7508, org.springframework.security.oauth2.server.authorization.oidc.web.OidcProviderConfigurationEndpointFilter@4f87829f, org.springframework.security.oauth2.server.authorization.web.NimbusJwkSetEndpointFilter@47a6ef0f, org.springframework.security.oauth2.server.authorization.web.OAuth2ClientAuthenticationFilter@4070023c, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@620222a4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4416ed86, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6c94a1fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c2bdc03, org.springframework.security.web.access.ExceptionTranslationFilter@7b9a6611, org.springframework.security.web.access.intercept.AuthorizationFilter@594230f2, org.springframework.security.oauth2.server.authorization.web.OAuth2TokenEndpointFilter@3e8cc43f, org.springframework.security.oauth2.server.authorization.web.OAuth2TokenIntrospectionEndpointFilter@7e2d4030, org.springframework.security.oauth2.server.authorization.web.OAuth2TokenRevocationEndpointFilter@784dd091, org.springframework.security.oauth2.server.authorization.web.OAuth2DeviceAuthorizationEndpointFilter@3caf472, org.springframework.security.oauth2.server.authorization.oidc.web.OidcUserInfoEndpointFilter@de51c9b]
+2024-04-29T10:13:46.739-04:00 DEBUG 16980 --- [auth-server] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-29T10:13:46.744-04:00 DEBUG 16980 --- [auth-server] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-29T10:13:46.774-04:00  INFO 16980 --- [auth-server] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-29T10:13:46.784-04:00  INFO 16980 --- [auth-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9000 (http) with context path ''
+2024-04-29T10:13:46.787-04:00  INFO 16980 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : Started AuthServerApplication in 1.409 seconds (process running for 607.599)
+2024-04-29T10:13:46.790-04:00  INFO 16980 --- [auth-server] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-04-29T10:13:55.632-04:00  INFO 16980 --- [auth-server] [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-29T10:13:55.632-04:00  INFO 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-29T10:13:55.632-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@18528ab9
+2024-04-29T10:13:55.632-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@59b3ec43
+2024-04-29T10:13:55.633-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.theme.FixedThemeResolver@36b09553
+2024-04-29T10:13:55.635-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected DefaultRequestToViewNameTranslator
+2024-04-29T10:13:55.635-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Detected SessionFlashMapManager
+2024-04-29T10:13:55.635-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-04-29T10:13:55.635-04:00  INFO 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-04-29T10:13:55.637-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/login", parameters={multipart}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-04-29T10:13:55.642-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]] and 4 interceptors
+2024-04-29T10:13:55.645-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-04-29T10:13:55.646-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource login.]
+2024-04-29T10:13:55.646-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2024-04-29T10:13:55.646-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND, headers={masked}
+2024-04-29T10:13:55.647-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-04-29T10:13:55.647-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={multipart}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-04-29T10:13:55.648-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-04-29T10:13:55.648-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-04-29T10:13:55.649-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.method.HandlerMethod             : Arguments: [org.springframework.web.multipart.support.StandardMultipartHttpServletRequest@7b943b7f]
+2024-04-29T10:13:55.650-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-04-29T10:13:55.650-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Apr 29 10:13:55 BOT 2024, status=404, error=Not Found, trace=org.springframework.web.servlet.resource.NoResourceFoundException: No static resource login.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:219)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+, message=No static resource login., path=/login}]
+2024-04-29T10:13:55.657-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-1] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2024-04-29T10:13:55.658-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2024-04-29T10:13:55.659-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404, headers={masked}
+2024-04-29T10:14:45.873-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/login", parameters={multipart}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-04-29T10:14:45.878-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]] and 4 interceptors
+2024-04-29T10:14:45.880-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-04-29T10:14:45.881-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource login.]
+2024-04-29T10:14:45.882-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2024-04-29T10:14:45.882-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND, headers={masked}
+2024-04-29T10:14:45.882-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-04-29T10:14:45.883-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={multipart}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-04-29T10:14:45.883-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-04-29T10:14:45.884-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-04-29T10:14:45.884-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.web.method.HandlerMethod             : Arguments: [org.springframework.web.multipart.support.StandardMultipartHttpServletRequest@55c49ec7]
+2024-04-29T10:14:45.885-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-04-29T10:14:45.886-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Apr 29 10:14:45 BOT 2024, status=404, error=Not Found, trace=org.springframework.web.servlet.resource.NoResourceFoundException: No static resource login.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:219)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+, message=No static resource login., path=/login}]
+2024-04-29T10:14:45.890-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-2] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2024-04-29T10:14:45.891-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2024-04-29T10:14:45.892-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404, headers={masked}
+2024-04-29T10:14:52.498-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/login", parameters={multipart}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-04-29T10:14:52.502-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]] and 4 interceptors
+2024-04-29T10:14:52.504-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-04-29T10:14:52.504-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource login.]
+2024-04-29T10:14:52.504-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2024-04-29T10:14:52.505-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND, headers={masked}
+2024-04-29T10:14:52.506-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-04-29T10:14:52.506-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={multipart}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2024-04-29T10:14:52.507-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 matching mappings: [{ [/error]}, { [/error], produces [text/html]}]
+2024-04-29T10:14:52.507-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-04-29T10:14:52.507-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-3] o.s.web.method.HandlerMethod             : Arguments: [org.springframework.web.multipart.support.StandardMultipartHttpServletRequest@3c208e4]
+2024-04-29T10:14:52.508-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-04-29T10:14:52.509-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Apr 29 10:14:52 BOT 2024, status=404, error=Not Found, trace=org.springframework.web.servlet.resource.NoResourceFoundException: No static resource login.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:219)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+, message=No static resource login., path=/login}]
+2024-04-29T10:14:52.513-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-3] s.w.s.m.m.a.RequestMappingHandlerAdapter : Applying default cacheSeconds=-1
+2024-04-29T10:14:52.513-04:00 TRACE 16980 --- [auth-server] [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : No view rendering, null ModelAndView returned.
+2024-04-29T10:14:52.513-04:00 DEBUG 16980 --- [auth-server] [http-nio-9000-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404, headers={masked}

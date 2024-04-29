@@ -23,7 +23,7 @@ public class SecurityConfig {
         .csrf(csrf -> csrf.disable())
         // La session sera manejada por el token
         .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-        .oauth2Login(login -> login.loginPage("/oauth2/authorization/client-app"))
+        .oauth2Login(login -> login.loginPage("/oauth2/authorization/msvc-client"))
         .oauth2Client(withDefaults())
         .oauth2ResourceServer(resourceServer -> resourceServer.jwt(withDefaults()));
     return http.build();
