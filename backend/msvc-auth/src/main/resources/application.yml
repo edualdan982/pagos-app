@@ -8,5 +8,5 @@ logging:
     '[org.springframework.security.oauth2]': DEBUG
 # Propiedades personalizadas
 jwt:
-  private.key: classpath:app.key
-  public.key: classpath:app.pub
+  private.key: classpath:rsa/app.key
+  public.key: classpath:rsa/app.pub

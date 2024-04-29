@@ -1,8 +1,10 @@
-package acuario.msvc.auth.config.auth;
+package acuario.msvc.auth.config.security;
 
 import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -76,16 +78,20 @@ public class AuthorizationServerConfig {
 
   @Bean
   public RegisteredClientRepository registeredClientRepository() {
-    RegisteredClient clientApp = RegisteredClient.withId(UUID.randomUUID().toString())
+    List<RegisteredClient> registerClients = new ArrayList<>();
+
+    String uuid = UUID.randomUUID().toString();
+    System.out.println("UUID client: " + uuid);
+    RegisteredClient clientApp = RegisteredClient.withId(uuid)
         // ? Este es el identificador del cliente no confundir con el "clientName"
-        .clientId("client-app-id")
+        .clientId("msvc-client-id")
         .clientSecret("{noop}123456")
         .tokenSettings(tokenSettings())
         .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
         .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
         .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
-        // ? Al final es donde se pone el "clientName" en esta caso es: 'client-app'
-        .redirectUri("http://127.0.0.1:8091/login/oauth2/code/client-app")
+        // ? Al final es donde se pone el "clientName" en esta caso es: 'msvc-client'
+        .redirectUri("http://127.0.0.1:8091/login/oauth2/code/msvc-client")
         .redirectUri("http://127.0.0.1:8091/authorized")
         .postLogoutRedirectUri("http://127.0.0.1:8091/logout")
         .scope("read")
@@ -94,24 +100,27 @@ public class AuthorizationServerConfig {
         .scope(OidcScopes.PROFILE)
         .clientSettings(ClientSettings.builder().requireAuthorizationConsent(false).build())
         .build();
-    RegisteredClient pagosApp = RegisteredClient.withId(UUID.randomUUID().toString())
-        .clientId("pagos-app-id")
+    registerClients.add(clientApp);
+    uuid = UUID.randomUUID().toString();
+    System.out.println("UUID pagos: " + uuid);
+    RegisteredClient pagosApp = RegisteredClient.withId(uuid)
+        .clientId("msvc-pagos-id")
         .clientSecret("{noop}123456")
         .tokenSettings(tokenSettings())
         .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
         .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
         .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
-        .redirectUri("http://127.0.0.1:8090/login/oauth2/code/pagos-app")
+        .redirectUri("http://127.0.0.1:8090/login/oauth2/code/msvc-pagos")
         .redirectUri("http://127.0.0.1:8090/authorized")
         .postLogoutRedirectUri("http://127.0.0.1:8090/logout")
         .scope("read")
         .scope("write")
         .scope(OidcScopes.OPENID)
         .scope(OidcScopes.PROFILE)
-        .clientSettings(ClientSettings.builder().requireAuthorizationConsent(false).build())
         .build();
+    // registerClients.add(pagosApp);
 
-    return new InMemoryRegisteredClientRepository(clientApp, pagosApp);
+    return new InMemoryRegisteredClientRepository(registerClients);
   }
 
   @Bean

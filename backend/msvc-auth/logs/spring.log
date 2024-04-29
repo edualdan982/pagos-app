@@ -1,0 +1,968 @@
+2024-04-28T22:53:28.978-04:00  INFO 27608 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : Starting AuthServerApplication using Java 17.0.4.1 with PID 27608 (D:\proyectos\acuario\pagos-app\backend\msvc-auth\target\classes started by wipit in D:\proyectos\acuario\pagos-app\backend\msvc-auth)
+2024-04-28T22:53:28.980-04:00  INFO 27608 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-04-28T22:53:29.045-04:00  INFO 27608 --- [auth-server] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\wipit\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/wipit/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-04-28T22:53:29.045-04:00  INFO 27608 --- [auth-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-28T22:53:29.045-04:00  INFO 27608 --- [auth-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-28T22:53:30.081-04:00  INFO 27608 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-28T22:53:30.187-04:00  INFO 27608 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interface.
+2024-04-28T22:53:31.204-04:00  INFO 27608 --- [auth-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2024-04-28T22:53:31.232-04:00  INFO 27608 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-28T22:53:31.233-04:00  INFO 27608 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-28T22:53:31.337-04:00  INFO 27608 --- [auth-server] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-28T22:53:31.338-04:00  INFO 27608 --- [auth-server] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2291 ms
+2024-04-28T22:53:31.804-04:00  INFO 27608 --- [auth-server] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-28T22:53:31.919-04:00  INFO 27608 --- [auth-server] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-28T22:53:31.949-04:00  INFO 27608 --- [auth-server] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-28T22:53:32.237-04:00  INFO 27608 --- [auth-server] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-28T22:53:32.254-04:00  INFO 27608 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-28T22:53:32.767-04:00  INFO 27608 --- [auth-server] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3ce60110
+2024-04-28T22:53:32.769-04:00  INFO 27608 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-28T22:53:33.532-04:00  INFO 27608 --- [auth-server] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-28T22:53:36.260-04:00  INFO 27608 --- [auth-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28T22:53:36.273-04:00  WARN 27608 --- [auth-server] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authorizationServerConfig': Unsatisfied dependency expressed through field 'key': Failed to convert value of type 'java.lang.String' to required type 'java.security.interfaces.RSAPublicKey'; Failed to convert from type [java.lang.String] to type [@org.springframework.beans.factory.annotation.Value java.security.interfaces.RSAPublicKey] for value [classpath:app.pub]
+2024-04-28T22:53:36.274-04:00  INFO 27608 --- [auth-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28T22:53:36.280-04:00  INFO 27608 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-28T22:53:36.517-04:00  INFO 27608 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-28T22:53:36.519-04:00  INFO 27608 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-28T22:53:36.527-04:00  INFO 27608 --- [auth-server] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-28T22:53:36.544-04:00 ERROR 27608 --- [auth-server] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authorizationServerConfig': Unsatisfied dependency expressed through field 'key': Failed to convert value of type 'java.lang.String' to required type 'java.security.interfaces.RSAPublicKey'; Failed to convert from type [java.lang.String] to type [@org.springframework.beans.factory.annotation.Value java.security.interfaces.RSAPublicKey] for value [classpath:app.pub]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1419) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at acuario.msvc.auth.AuthServerApplication.main(AuthServerApplication.java:9) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.5.jar:3.2.5]
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.security.interfaces.RSAPublicKey'; Failed to convert from type [java.lang.String] to type [@org.springframework.beans.factory.annotation.Value java.security.interfaces.RSAPublicKey] for value [classpath:app.pub]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:87) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:71) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1381) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 25 common frames omitted
+Caused by: org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.beans.factory.annotation.Value java.security.interfaces.RSAPublicKey] for value [classpath:app.pub]
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:182) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:131) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:80) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 29 common frames omitted
+Caused by: java.io.UncheckedIOException: java.io.FileNotFoundException: class path resource [app.pub] cannot be opened because it does not exist
+	at org.springframework.security.config.crypto.RsaKeyConversionServicePostProcessor$ResourceKeyConverterAdapter.toInputStream(RsaKeyConversionServicePostProcessor.java:158) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.security.config.crypto.RsaKeyConversionServicePostProcessor$ResourceKeyConverterAdapter.lambda$pemInputStreamConverter$0(RsaKeyConversionServicePostProcessor.java:146) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.core.convert.converter.Converter.lambda$andThen$0(Converter.java:62) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.security.config.crypto.RsaKeyConversionServicePostProcessor$ResourceKeyConverterAdapter.convert(RsaKeyConversionServicePostProcessor.java:132) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.security.config.crypto.RsaKeyConversionServicePostProcessor$ResourceKeyConverterAdapter.convert(RsaKeyConversionServicePostProcessor.java:113) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.core.convert.support.GenericConversionService$ConverterAdapter.convert(GenericConversionService.java:358) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41) ~[spring-core-6.1.6.jar:6.1.6]
+	... 32 common frames omitted
+Caused by: java.io.FileNotFoundException: class path resource [app.pub] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:215) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.security.config.crypto.RsaKeyConversionServicePostProcessor$ResourceKeyConverterAdapter.toInputStream(RsaKeyConversionServicePostProcessor.java:155) ~[spring-security-config-6.2.4.jar:6.2.4]
+	... 38 common frames omitted
+
+2024-04-28T22:54:57.212-04:00  INFO 7000 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : Starting AuthServerApplication using Java 17.0.4.1 with PID 7000 (D:\proyectos\acuario\pagos-app\backend\msvc-auth\target\classes started by wipit in D:\proyectos\acuario\pagos-app\backend\msvc-auth)
+2024-04-28T22:54:57.214-04:00  INFO 7000 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-04-28T22:54:57.266-04:00  INFO 7000 --- [auth-server] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\wipit\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/wipit/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-04-28T22:54:57.267-04:00  INFO 7000 --- [auth-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-28T22:54:57.267-04:00  INFO 7000 --- [auth-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-28T22:54:58.185-04:00  INFO 7000 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-28T22:54:58.284-04:00  INFO 7000 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interface.
+2024-04-28T22:54:59.388-04:00  INFO 7000 --- [auth-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2024-04-28T22:54:59.427-04:00  INFO 7000 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-28T22:54:59.427-04:00  INFO 7000 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-28T22:54:59.534-04:00  INFO 7000 --- [auth-server] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-28T22:54:59.534-04:00  INFO 7000 --- [auth-server] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2267 ms
+2024-04-28T22:55:00.009-04:00  INFO 7000 --- [auth-server] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-28T22:55:00.180-04:00  INFO 7000 --- [auth-server] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-28T22:55:00.225-04:00  INFO 7000 --- [auth-server] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-28T22:55:00.497-04:00  INFO 7000 --- [auth-server] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-28T22:55:00.514-04:00  INFO 7000 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-28T22:55:00.999-04:00  INFO 7000 --- [auth-server] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@71102c2c
+2024-04-28T22:55:01.001-04:00  INFO 7000 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-28T22:55:01.781-04:00  INFO 7000 --- [auth-server] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-28T22:55:04.432-04:00  INFO 7000 --- [auth-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28T22:55:04.769-04:00  INFO 7000 --- [auth-server] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-28T22:55:05.385-04:00  WARN 7000 --- [auth-server] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restTemplate' defined in class path resource [acuario/msvc/auth/config/RestTemplateConfig.class]: Failed to instantiate [org.springframework.web.client.RestTemplate]: Factory method 'restTemplate' threw exception with message: org/apache/hc/client5/http/classic/HttpClient
+2024-04-28T22:55:05.387-04:00  INFO 7000 --- [auth-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28T22:55:05.392-04:00  INFO 7000 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-28T22:55:05.645-04:00  INFO 7000 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-28T22:55:05.647-04:00  INFO 7000 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-28T22:55:05.656-04:00  INFO 7000 --- [auth-server] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-28T22:55:05.682-04:00 ERROR 7000 --- [auth-server] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'restTemplate' defined in class path resource [acuario/msvc/auth/config/RestTemplateConfig.class]: Failed to instantiate [org.springframework.web.client.RestTemplate]: Factory method 'restTemplate' threw exception with message: org/apache/hc/client5/http/classic/HttpClient
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at acuario.msvc.auth.AuthServerApplication.main(AuthServerApplication.java:9) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.5.jar:3.2.5]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.client.RestTemplate]: Factory method 'restTemplate' threw exception with message: org/apache/hc/client5/http/classic/HttpClient
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 24 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/apache/hc/client5/http/classic/HttpClient
+	at acuario.msvc.auth.config.RestTemplateConfig.restTemplate(RestTemplateConfig.java:14) ~[classes/:na]
+	at acuario.msvc.auth.config.RestTemplateConfig$$SpringCGLIB$$0.CGLIB$restTemplate$0(<generated>) ~[classes/:na]
+	at acuario.msvc.auth.config.RestTemplateConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.1.6.jar:6.1.6]
+	at acuario.msvc.auth.config.RestTemplateConfig$$SpringCGLIB$$0.restTemplate(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.apache.hc.client5.http.classic.HttpClient
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	... 36 common frames omitted
+
+2024-04-28T22:59:02.154-04:00  INFO 20276 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : Starting AuthServerApplication using Java 17.0.4.1 with PID 20276 (D:\proyectos\acuario\pagos-app\backend\msvc-auth\target\classes started by wipit in D:\proyectos\acuario\pagos-app\backend\msvc-auth)
+2024-04-28T22:59:02.156-04:00  INFO 20276 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-04-28T22:59:02.218-04:00  INFO 20276 --- [auth-server] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\wipit\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/wipit/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-04-28T22:59:02.219-04:00  INFO 20276 --- [auth-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-28T22:59:02.219-04:00  INFO 20276 --- [auth-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-28T22:59:03.248-04:00  INFO 20276 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-28T22:59:03.345-04:00  INFO 20276 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 1 JPA repository interface.
+2024-04-28T22:59:04.240-04:00  INFO 20276 --- [auth-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2024-04-28T22:59:04.269-04:00  INFO 20276 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-28T22:59:04.270-04:00  INFO 20276 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-28T22:59:04.375-04:00  INFO 20276 --- [auth-server] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-28T22:59:04.376-04:00  INFO 20276 --- [auth-server] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2157 ms
+2024-04-28T22:59:04.805-04:00  INFO 20276 --- [auth-server] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-28T22:59:04.990-04:00  INFO 20276 --- [auth-server] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-28T22:59:05.042-04:00  INFO 20276 --- [auth-server] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-28T22:59:05.352-04:00  INFO 20276 --- [auth-server] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-28T22:59:05.369-04:00  INFO 20276 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-28T22:59:05.876-04:00  INFO 20276 --- [auth-server] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2659224d
+2024-04-28T22:59:05.877-04:00  INFO 20276 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-28T22:59:06.669-04:00  INFO 20276 --- [auth-server] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-28T22:59:09.233-04:00  INFO 20276 --- [auth-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28T22:59:09.534-04:00  INFO 20276 --- [auth-server] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-28T22:59:10.244-04:00  WARN 20276 --- [auth-server] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-28T22:59:10.634-04:00  WARN 20276 --- [auth-server] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authorizationServerSecurityFilterChain' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'authorizationServerSecurityFilterChain' threw exception with message: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: c1088c73-9789-4b7e-be6d-d760ceae1ef4
+2024-04-28T22:59:10.635-04:00  INFO 20276 --- [auth-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28T22:59:10.643-04:00  INFO 20276 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-28T22:59:10.880-04:00  INFO 20276 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-28T22:59:10.882-04:00  INFO 20276 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-28T22:59:10.892-04:00  INFO 20276 --- [auth-server] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-28T22:59:10.931-04:00 ERROR 20276 --- [auth-server] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authorizationServerSecurityFilterChain' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'authorizationServerSecurityFilterChain' threw exception with message: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: c1088c73-9789-4b7e-be6d-d760ceae1ef4
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at acuario.msvc.auth.AuthServerApplication.main(AuthServerApplication.java:9) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.5.jar:3.2.5]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'authorizationServerSecurityFilterChain' threw exception with message: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: c1088c73-9789-4b7e-be6d-d760ceae1ef4
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: c1088c73-9789-4b7e-be6d-d760ceae1ef4
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:225) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1323) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1284) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:486) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:341) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:334) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1252) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ConfigurerUtils.getBean(OAuth2ConfigurerUtils.java:184) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ConfigurerUtils.getRegisteredClientRepository(OAuth2ConfigurerUtils.java:62) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ClientAuthenticationConfigurer.createDefaultAuthenticationProviders(OAuth2ClientAuthenticationConfigurer.java:225) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ClientAuthenticationConfigurer.init(OAuth2ClientAuthenticationConfigurer.java:176) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer.lambda$init$4(OAuth2AuthorizationServerConfigurer.java:313) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647) ~[na:na]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer.init(OAuth2AuthorizationServerConfigurer.java:312) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer.init(OAuth2AuthorizationServerConfigurer.java:83) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.init(AbstractConfiguredSecurityBuilder.java:365) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:327) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:38) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig.authorizationServerSecurityFilterChain(AuthorizationServerConfig.java:67) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.CGLIB$authorizationServerSecurityFilterChain$5(<generated>) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.1.6.jar:6.1.6]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.authorizationServerSecurityFilterChain(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: c1088c73-9789-4b7e-be6d-d760ceae1ef4
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 62 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Registered client must be unique. Found duplicate client secret for identifier: c1088c73-9789-4b7e-be6d-d760ceae1ef4
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.lambda$assertUniqueIdentifiers$0(InMemoryRegisteredClientRepository.java:109) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at java.base/java.util.concurrent.ConcurrentHashMap$ValuesView.forEach(ConcurrentHashMap.java:4780) ~[na:na]
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.assertUniqueIdentifiers(InMemoryRegisteredClientRepository.java:97) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.<init>(InMemoryRegisteredClientRepository.java:64) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.<init>(InMemoryRegisteredClientRepository.java:50) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig.registeredClientRepository(AuthorizationServerConfig.java:114) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.CGLIB$registeredClientRepository$3(<generated>) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.1.6.jar:6.1.6]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.registeredClientRepository(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 63 common frames omitted
+
+2024-04-28T23:01:10.647-04:00  INFO 18936 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : Starting AuthServerApplication using Java 17.0.4.1 with PID 18936 (D:\proyectos\acuario\pagos-app\backend\msvc-auth\target\classes started by wipit in D:\proyectos\acuario\pagos-app\backend\msvc-auth)
+2024-04-28T23:01:10.649-04:00  INFO 18936 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-04-28T23:01:10.703-04:00  INFO 18936 --- [auth-server] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\wipit\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/wipit/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-04-28T23:01:10.704-04:00  INFO 18936 --- [auth-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-28T23:01:10.704-04:00  INFO 18936 --- [auth-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-28T23:01:11.833-04:00  INFO 18936 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-28T23:01:11.920-04:00  INFO 18936 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interface.
+2024-04-28T23:01:13.079-04:00  INFO 18936 --- [auth-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2024-04-28T23:01:13.112-04:00  INFO 18936 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-28T23:01:13.113-04:00  INFO 18936 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-28T23:01:13.218-04:00  INFO 18936 --- [auth-server] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-28T23:01:13.219-04:00  INFO 18936 --- [auth-server] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2514 ms
+2024-04-28T23:01:14.046-04:00  INFO 18936 --- [auth-server] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-28T23:01:14.189-04:00  INFO 18936 --- [auth-server] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-28T23:01:14.293-04:00  INFO 18936 --- [auth-server] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-28T23:01:14.584-04:00  INFO 18936 --- [auth-server] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-28T23:01:14.622-04:00  INFO 18936 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-28T23:01:15.227-04:00  INFO 18936 --- [auth-server] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5344c29b
+2024-04-28T23:01:15.230-04:00  INFO 18936 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-28T23:01:16.265-04:00  INFO 18936 --- [auth-server] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-28T23:01:18.838-04:00  INFO 18936 --- [auth-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28T23:01:19.475-04:00  INFO 18936 --- [auth-server] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-28T23:01:20.434-04:00  WARN 18936 --- [auth-server] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-28T23:01:20.709-04:00  WARN 18936 --- [auth-server] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authorizationServerSecurityFilterChain' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'authorizationServerSecurityFilterChain' threw exception with message: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: e78d590a-11ab-418e-b0fe-6b6af2bc82e8pagos
+2024-04-28T23:01:20.714-04:00  INFO 18936 --- [auth-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28T23:01:20.733-04:00  INFO 18936 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-28T23:01:20.996-04:00  INFO 18936 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-28T23:01:21.002-04:00  INFO 18936 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-28T23:01:21.029-04:00  INFO 18936 --- [auth-server] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-28T23:01:21.075-04:00 ERROR 18936 --- [auth-server] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authorizationServerSecurityFilterChain' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'authorizationServerSecurityFilterChain' threw exception with message: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: e78d590a-11ab-418e-b0fe-6b6af2bc82e8pagos
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at acuario.msvc.auth.AuthServerApplication.main(AuthServerApplication.java:9) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.5.jar:3.2.5]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'authorizationServerSecurityFilterChain' threw exception with message: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: e78d590a-11ab-418e-b0fe-6b6af2bc82e8pagos
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: e78d590a-11ab-418e-b0fe-6b6af2bc82e8pagos
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:225) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1323) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1284) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:486) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:341) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:334) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1252) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ConfigurerUtils.getBean(OAuth2ConfigurerUtils.java:184) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ConfigurerUtils.getRegisteredClientRepository(OAuth2ConfigurerUtils.java:62) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ClientAuthenticationConfigurer.createDefaultAuthenticationProviders(OAuth2ClientAuthenticationConfigurer.java:225) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ClientAuthenticationConfigurer.init(OAuth2ClientAuthenticationConfigurer.java:176) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer.lambda$init$4(OAuth2AuthorizationServerConfigurer.java:313) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647) ~[na:na]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer.init(OAuth2AuthorizationServerConfigurer.java:312) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer.init(OAuth2AuthorizationServerConfigurer.java:83) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.init(AbstractConfiguredSecurityBuilder.java:365) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:327) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:38) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig.authorizationServerSecurityFilterChain(AuthorizationServerConfig.java:67) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.CGLIB$authorizationServerSecurityFilterChain$5(<generated>) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.1.6.jar:6.1.6]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.authorizationServerSecurityFilterChain(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: e78d590a-11ab-418e-b0fe-6b6af2bc82e8pagos
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 62 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Registered client must be unique. Found duplicate client secret for identifier: e78d590a-11ab-418e-b0fe-6b6af2bc82e8pagos
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.lambda$assertUniqueIdentifiers$0(InMemoryRegisteredClientRepository.java:109) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at java.base/java.util.concurrent.ConcurrentHashMap$ValuesView.forEach(ConcurrentHashMap.java:4780) ~[na:na]
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.assertUniqueIdentifiers(InMemoryRegisteredClientRepository.java:97) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.<init>(InMemoryRegisteredClientRepository.java:64) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.<init>(InMemoryRegisteredClientRepository.java:50) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig.registeredClientRepository(AuthorizationServerConfig.java:114) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.CGLIB$registeredClientRepository$0(<generated>) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.1.6.jar:6.1.6]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.registeredClientRepository(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 63 common frames omitted
+
+2024-04-28T23:03:49.308-04:00  INFO 2824 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : Starting AuthServerApplication using Java 17.0.4.1 with PID 2824 (D:\proyectos\acuario\pagos-app\backend\msvc-auth\target\classes started by wipit in D:\proyectos\acuario\pagos-app\backend\msvc-auth)
+2024-04-28T23:03:49.310-04:00  INFO 2824 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-04-28T23:03:49.357-04:00  INFO 2824 --- [auth-server] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\wipit\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/wipit/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-04-28T23:03:49.357-04:00  INFO 2824 --- [auth-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-28T23:03:49.357-04:00  INFO 2824 --- [auth-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-28T23:03:50.347-04:00  INFO 2824 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-28T23:03:50.435-04:00  INFO 2824 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interface.
+2024-04-28T23:03:51.263-04:00  INFO 2824 --- [auth-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2024-04-28T23:03:51.307-04:00  INFO 2824 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-28T23:03:51.308-04:00  INFO 2824 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-28T23:03:51.410-04:00  INFO 2824 --- [auth-server] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-28T23:03:51.411-04:00  INFO 2824 --- [auth-server] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2053 ms
+2024-04-28T23:03:51.916-04:00  INFO 2824 --- [auth-server] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-28T23:03:52.044-04:00  INFO 2824 --- [auth-server] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-28T23:03:52.085-04:00  INFO 2824 --- [auth-server] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-28T23:03:52.378-04:00  INFO 2824 --- [auth-server] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-28T23:03:52.396-04:00  INFO 2824 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-28T23:03:52.928-04:00  INFO 2824 --- [auth-server] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@13a49b13
+2024-04-28T23:03:52.930-04:00  INFO 2824 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-28T23:03:53.727-04:00  INFO 2824 --- [auth-server] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-28T23:03:56.312-04:00  INFO 2824 --- [auth-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28T23:03:56.674-04:00  INFO 2824 --- [auth-server] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-28T23:03:57.348-04:00  WARN 2824 --- [auth-server] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-28T23:03:57.633-04:00  WARN 2824 --- [auth-server] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authorizationServerSecurityFilterChain' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'authorizationServerSecurityFilterChain' threw exception with message: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: 61715c71-7cc5-4a9d-bc64-b703cd1deef3
+2024-04-28T23:03:57.634-04:00  INFO 2824 --- [auth-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28T23:03:57.636-04:00  INFO 2824 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-28T23:03:57.890-04:00  INFO 2824 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-28T23:03:57.892-04:00  INFO 2824 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-28T23:03:57.900-04:00  INFO 2824 --- [auth-server] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-28T23:03:57.912-04:00 ERROR 2824 --- [auth-server] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authorizationServerSecurityFilterChain' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'authorizationServerSecurityFilterChain' threw exception with message: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: 61715c71-7cc5-4a9d-bc64-b703cd1deef3
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at acuario.msvc.auth.AuthServerApplication.main(AuthServerApplication.java:9) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.5.jar:3.2.5]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'authorizationServerSecurityFilterChain' threw exception with message: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: 61715c71-7cc5-4a9d-bc64-b703cd1deef3
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: 61715c71-7cc5-4a9d-bc64-b703cd1deef3
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:225) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1323) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1284) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:486) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:341) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:334) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1252) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ConfigurerUtils.getBean(OAuth2ConfigurerUtils.java:184) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ConfigurerUtils.getRegisteredClientRepository(OAuth2ConfigurerUtils.java:62) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ClientAuthenticationConfigurer.createDefaultAuthenticationProviders(OAuth2ClientAuthenticationConfigurer.java:225) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ClientAuthenticationConfigurer.init(OAuth2ClientAuthenticationConfigurer.java:176) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer.lambda$init$4(OAuth2AuthorizationServerConfigurer.java:313) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647) ~[na:na]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer.init(OAuth2AuthorizationServerConfigurer.java:312) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer.init(OAuth2AuthorizationServerConfigurer.java:83) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.init(AbstractConfiguredSecurityBuilder.java:365) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:327) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:38) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig.authorizationServerSecurityFilterChain(AuthorizationServerConfig.java:67) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.CGLIB$authorizationServerSecurityFilterChain$3(<generated>) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.1.6.jar:6.1.6]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.authorizationServerSecurityFilterChain(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: 61715c71-7cc5-4a9d-bc64-b703cd1deef3
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 62 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Registered client must be unique. Found duplicate client secret for identifier: 61715c71-7cc5-4a9d-bc64-b703cd1deef3
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.lambda$assertUniqueIdentifiers$0(InMemoryRegisteredClientRepository.java:109) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at java.base/java.util.concurrent.ConcurrentHashMap$ValuesView.forEach(ConcurrentHashMap.java:4780) ~[na:na]
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.assertUniqueIdentifiers(InMemoryRegisteredClientRepository.java:97) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.<init>(InMemoryRegisteredClientRepository.java:64) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.<init>(InMemoryRegisteredClientRepository.java:50) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig.registeredClientRepository(AuthorizationServerConfig.java:113) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.CGLIB$registeredClientRepository$5(<generated>) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.1.6.jar:6.1.6]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.registeredClientRepository(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 63 common frames omitted
+
+2024-04-28T23:04:58.592-04:00  INFO 19300 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : Starting AuthServerApplication using Java 17.0.4.1 with PID 19300 (D:\proyectos\acuario\pagos-app\backend\msvc-auth\target\classes started by wipit in D:\proyectos\acuario\pagos-app\backend\msvc-auth)
+2024-04-28T23:04:58.594-04:00  INFO 19300 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-04-28T23:04:58.654-04:00  INFO 19300 --- [auth-server] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\wipit\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/wipit/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-04-28T23:04:58.655-04:00  INFO 19300 --- [auth-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-28T23:04:58.655-04:00  INFO 19300 --- [auth-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-28T23:04:59.508-04:00  INFO 19300 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-28T23:04:59.630-04:00  INFO 19300 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 1 JPA repository interface.
+2024-04-28T23:05:00.485-04:00  INFO 19300 --- [auth-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2024-04-28T23:05:00.520-04:00  INFO 19300 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-28T23:05:00.521-04:00  INFO 19300 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-28T23:05:00.609-04:00  INFO 19300 --- [auth-server] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-28T23:05:00.610-04:00  INFO 19300 --- [auth-server] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1955 ms
+2024-04-28T23:05:01.130-04:00  INFO 19300 --- [auth-server] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-28T23:05:01.278-04:00  INFO 19300 --- [auth-server] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-28T23:05:01.309-04:00  INFO 19300 --- [auth-server] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-28T23:05:01.587-04:00  INFO 19300 --- [auth-server] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-28T23:05:01.606-04:00  INFO 19300 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-28T23:05:02.121-04:00  INFO 19300 --- [auth-server] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4ce1eb04
+2024-04-28T23:05:02.123-04:00  INFO 19300 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-28T23:05:02.873-04:00  INFO 19300 --- [auth-server] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-28T23:05:05.484-04:00  INFO 19300 --- [auth-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28T23:05:05.851-04:00  INFO 19300 --- [auth-server] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-28T23:05:06.524-04:00  WARN 19300 --- [auth-server] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-28T23:05:06.859-04:00  WARN 19300 --- [auth-server] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authorizationServerSecurityFilterChain' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'authorizationServerSecurityFilterChain' threw exception with message: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: 1b368098-17c8-4c75-ba12-e215de8ae81b
+2024-04-28T23:05:06.860-04:00  INFO 19300 --- [auth-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28T23:05:06.868-04:00  INFO 19300 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-28T23:05:07.119-04:00  INFO 19300 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-28T23:05:07.121-04:00  INFO 19300 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-28T23:05:07.129-04:00  INFO 19300 --- [auth-server] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-28T23:05:07.152-04:00 ERROR 19300 --- [auth-server] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authorizationServerSecurityFilterChain' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'authorizationServerSecurityFilterChain' threw exception with message: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: 1b368098-17c8-4c75-ba12-e215de8ae81b
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at acuario.msvc.auth.AuthServerApplication.main(AuthServerApplication.java:9) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.5.jar:3.2.5]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'authorizationServerSecurityFilterChain' threw exception with message: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: 1b368098-17c8-4c75-ba12-e215de8ae81b
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: 1b368098-17c8-4c75-ba12-e215de8ae81b
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:225) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1323) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1284) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:486) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:341) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:334) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1252) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ConfigurerUtils.getBean(OAuth2ConfigurerUtils.java:184) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ConfigurerUtils.getRegisteredClientRepository(OAuth2ConfigurerUtils.java:62) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ClientAuthenticationConfigurer.createDefaultAuthenticationProviders(OAuth2ClientAuthenticationConfigurer.java:225) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ClientAuthenticationConfigurer.init(OAuth2ClientAuthenticationConfigurer.java:176) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer.lambda$init$4(OAuth2AuthorizationServerConfigurer.java:313) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647) ~[na:na]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer.init(OAuth2AuthorizationServerConfigurer.java:312) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer.init(OAuth2AuthorizationServerConfigurer.java:83) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.init(AbstractConfiguredSecurityBuilder.java:365) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:327) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:38) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig.authorizationServerSecurityFilterChain(AuthorizationServerConfig.java:67) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.CGLIB$authorizationServerSecurityFilterChain$0(<generated>) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.1.6.jar:6.1.6]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.authorizationServerSecurityFilterChain(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: 1b368098-17c8-4c75-ba12-e215de8ae81b
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 62 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Registered client must be unique. Found duplicate client secret for identifier: 1b368098-17c8-4c75-ba12-e215de8ae81b
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.lambda$assertUniqueIdentifiers$0(InMemoryRegisteredClientRepository.java:109) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at java.base/java.util.concurrent.ConcurrentHashMap$ValuesView.forEach(ConcurrentHashMap.java:4780) ~[na:na]
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.assertUniqueIdentifiers(InMemoryRegisteredClientRepository.java:97) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.<init>(InMemoryRegisteredClientRepository.java:64) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.<init>(InMemoryRegisteredClientRepository.java:50) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig.registeredClientRepository(AuthorizationServerConfig.java:117) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.CGLIB$registeredClientRepository$5(<generated>) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.1.6.jar:6.1.6]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.registeredClientRepository(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 63 common frames omitted
+
+2024-04-28T23:09:39.954-04:00  INFO 20132 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : Starting AuthServerApplication using Java 17.0.4.1 with PID 20132 (D:\proyectos\acuario\pagos-app\backend\msvc-auth\target\classes started by wipit in D:\proyectos\acuario\pagos-app\backend\msvc-auth)
+2024-04-28T23:09:39.956-04:00  INFO 20132 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-04-28T23:09:40.009-04:00  INFO 20132 --- [auth-server] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\wipit\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/wipit/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-04-28T23:09:40.009-04:00  INFO 20132 --- [auth-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-28T23:09:40.009-04:00  INFO 20132 --- [auth-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-28T23:09:40.954-04:00  INFO 20132 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-28T23:09:41.047-04:00  INFO 20132 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
+2024-04-28T23:09:41.961-04:00  INFO 20132 --- [auth-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2024-04-28T23:09:42.000-04:00  INFO 20132 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-28T23:09:42.001-04:00  INFO 20132 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-28T23:09:42.085-04:00  INFO 20132 --- [auth-server] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-28T23:09:42.086-04:00  INFO 20132 --- [auth-server] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2074 ms
+2024-04-28T23:09:42.465-04:00  INFO 20132 --- [auth-server] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-28T23:09:42.608-04:00  INFO 20132 --- [auth-server] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-28T23:09:42.644-04:00  INFO 20132 --- [auth-server] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-28T23:09:42.979-04:00  INFO 20132 --- [auth-server] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-28T23:09:42.996-04:00  INFO 20132 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-28T23:09:43.656-04:00  INFO 20132 --- [auth-server] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@57942c6
+2024-04-28T23:09:43.658-04:00  INFO 20132 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-28T23:09:44.477-04:00  INFO 20132 --- [auth-server] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-28T23:09:47.068-04:00  INFO 20132 --- [auth-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28T23:09:47.424-04:00  INFO 20132 --- [auth-server] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-28T23:09:48.112-04:00  WARN 20132 --- [auth-server] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-28T23:09:48.386-04:00  WARN 20132 --- [auth-server] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authorizationServerSecurityFilterChain' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'authorizationServerSecurityFilterChain' threw exception with message: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: faddea85-8159-4094-ad4b-2521470aa43e
+2024-04-28T23:09:48.387-04:00  INFO 20132 --- [auth-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28T23:09:48.394-04:00  INFO 20132 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-28T23:09:48.641-04:00  INFO 20132 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-28T23:09:48.644-04:00  INFO 20132 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-28T23:09:48.652-04:00  INFO 20132 --- [auth-server] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-28T23:09:48.667-04:00 ERROR 20132 --- [auth-server] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authorizationServerSecurityFilterChain' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'authorizationServerSecurityFilterChain' threw exception with message: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: faddea85-8159-4094-ad4b-2521470aa43e
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at acuario.msvc.auth.AuthServerApplication.main(AuthServerApplication.java:9) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.5.jar:3.2.5]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'authorizationServerSecurityFilterChain' threw exception with message: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: faddea85-8159-4094-ad4b-2521470aa43e
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: faddea85-8159-4094-ad4b-2521470aa43e
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:225) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1323) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1284) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:486) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:341) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:334) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1252) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ConfigurerUtils.getBean(OAuth2ConfigurerUtils.java:184) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ConfigurerUtils.getRegisteredClientRepository(OAuth2ConfigurerUtils.java:62) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ClientAuthenticationConfigurer.createDefaultAuthenticationProviders(OAuth2ClientAuthenticationConfigurer.java:225) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ClientAuthenticationConfigurer.init(OAuth2ClientAuthenticationConfigurer.java:176) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer.lambda$init$4(OAuth2AuthorizationServerConfigurer.java:313) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647) ~[na:na]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer.init(OAuth2AuthorizationServerConfigurer.java:312) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer.init(OAuth2AuthorizationServerConfigurer.java:83) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.init(AbstractConfiguredSecurityBuilder.java:365) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:327) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:38) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig.authorizationServerSecurityFilterChain(AuthorizationServerConfig.java:69) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.CGLIB$authorizationServerSecurityFilterChain$5(<generated>) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.1.6.jar:6.1.6]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.authorizationServerSecurityFilterChain(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: faddea85-8159-4094-ad4b-2521470aa43e
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 62 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Registered client must be unique. Found duplicate client secret for identifier: faddea85-8159-4094-ad4b-2521470aa43e
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.lambda$assertUniqueIdentifiers$0(InMemoryRegisteredClientRepository.java:109) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at java.base/java.util.concurrent.ConcurrentHashMap$ValuesView.forEach(ConcurrentHashMap.java:4780) ~[na:na]
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.assertUniqueIdentifiers(InMemoryRegisteredClientRepository.java:97) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.<init>(InMemoryRegisteredClientRepository.java:64) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig.registeredClientRepository(AuthorizationServerConfig.java:119) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.CGLIB$registeredClientRepository$0(<generated>) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.1.6.jar:6.1.6]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.registeredClientRepository(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 63 common frames omitted
+
+2024-04-28T23:11:30.882-04:00  INFO 8296 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : Starting AuthServerApplication using Java 17.0.4.1 with PID 8296 (D:\proyectos\acuario\pagos-app\backend\msvc-auth\target\classes started by wipit in D:\proyectos\acuario\pagos-app\backend\msvc-auth)
+2024-04-28T23:11:30.884-04:00  INFO 8296 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-04-28T23:11:30.938-04:00  INFO 8296 --- [auth-server] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\wipit\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/wipit/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-04-28T23:11:30.938-04:00  INFO 8296 --- [auth-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-28T23:11:30.938-04:00  INFO 8296 --- [auth-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-28T23:11:31.926-04:00  INFO 8296 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-28T23:11:32.001-04:00  INFO 8296 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
+2024-04-28T23:11:32.864-04:00  INFO 8296 --- [auth-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2024-04-28T23:11:32.900-04:00  INFO 8296 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-28T23:11:32.901-04:00  INFO 8296 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-28T23:11:32.998-04:00  INFO 8296 --- [auth-server] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-28T23:11:33.000-04:00  INFO 8296 --- [auth-server] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2061 ms
+2024-04-28T23:11:33.316-04:00  INFO 8296 --- [auth-server] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-28T23:11:33.488-04:00  INFO 8296 --- [auth-server] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-28T23:11:33.529-04:00  INFO 8296 --- [auth-server] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-28T23:11:33.867-04:00  INFO 8296 --- [auth-server] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-28T23:11:33.888-04:00  INFO 8296 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-28T23:11:34.364-04:00  INFO 8296 --- [auth-server] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@13a49b13
+2024-04-28T23:11:34.366-04:00  INFO 8296 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-28T23:11:35.175-04:00  INFO 8296 --- [auth-server] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-28T23:11:37.789-04:00  INFO 8296 --- [auth-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28T23:11:38.093-04:00  INFO 8296 --- [auth-server] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-28T23:11:38.745-04:00  WARN 8296 --- [auth-server] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-28T23:11:39.106-04:00  WARN 8296 --- [auth-server] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authorizationServerSecurityFilterChain' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'authorizationServerSecurityFilterChain' threw exception with message: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: a1cde843-5b5c-45e4-af81-e6b89cfed0b3
+2024-04-28T23:11:39.107-04:00  INFO 8296 --- [auth-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28T23:11:39.113-04:00  INFO 8296 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-28T23:11:39.364-04:00  INFO 8296 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-04-28T23:11:39.366-04:00  INFO 8296 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-28T23:11:39.374-04:00  INFO 8296 --- [auth-server] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-28T23:11:39.392-04:00 ERROR 8296 --- [auth-server] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'authorizationServerSecurityFilterChain' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'authorizationServerSecurityFilterChain' threw exception with message: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: a1cde843-5b5c-45e4-af81-e6b89cfed0b3
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at acuario.msvc.auth.AuthServerApplication.main(AuthServerApplication.java:9) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.5.jar:3.2.5]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'authorizationServerSecurityFilterChain' threw exception with message: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: a1cde843-5b5c-45e4-af81-e6b89cfed0b3
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'registeredClientRepository' defined in class path resource [acuario/msvc/auth/config/security/AuthorizationServerConfig.class]: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: a1cde843-5b5c-45e4-af81-e6b89cfed0b3
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:225) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1323) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveNamedBean(DefaultListableBeanFactory.java:1284) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:486) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:341) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:334) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1252) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ConfigurerUtils.getBean(OAuth2ConfigurerUtils.java:184) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ConfigurerUtils.getRegisteredClientRepository(OAuth2ConfigurerUtils.java:62) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ClientAuthenticationConfigurer.createDefaultAuthenticationProviders(OAuth2ClientAuthenticationConfigurer.java:225) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2ClientAuthenticationConfigurer.init(OAuth2ClientAuthenticationConfigurer.java:176) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer.lambda$init$4(OAuth2AuthorizationServerConfigurer.java:313) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at java.base/java.util.LinkedHashMap$LinkedValues.forEach(LinkedHashMap.java:647) ~[na:na]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer.init(OAuth2AuthorizationServerConfigurer.java:312) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer.init(OAuth2AuthorizationServerConfigurer.java:83) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.init(AbstractConfiguredSecurityBuilder.java:365) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:327) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:38) ~[spring-security-config-6.2.4.jar:6.2.4]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig.authorizationServerSecurityFilterChain(AuthorizationServerConfig.java:69) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.CGLIB$authorizationServerSecurityFilterChain$3(<generated>) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.1.6.jar:6.1.6]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.authorizationServerSecurityFilterChain(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository]: Factory method 'registeredClientRepository' threw exception with message: Registered client must be unique. Found duplicate client secret for identifier: a1cde843-5b5c-45e4-af81-e6b89cfed0b3
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 62 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Registered client must be unique. Found duplicate client secret for identifier: a1cde843-5b5c-45e4-af81-e6b89cfed0b3
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.lambda$assertUniqueIdentifiers$0(InMemoryRegisteredClientRepository.java:109) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at java.base/java.util.concurrent.ConcurrentHashMap$ValuesView.forEach(ConcurrentHashMap.java:4780) ~[na:na]
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.assertUniqueIdentifiers(InMemoryRegisteredClientRepository.java:97) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at org.springframework.security.oauth2.server.authorization.client.InMemoryRegisteredClientRepository.<init>(InMemoryRegisteredClientRepository.java:64) ~[spring-security-oauth2-authorization-server-1.2.4.jar:1.2.4]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig.registeredClientRepository(AuthorizationServerConfig.java:123) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.CGLIB$registeredClientRepository$4(<generated>) ~[classes/:na]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-6.1.6.jar:6.1.6]
+	at acuario.msvc.auth.config.security.AuthorizationServerConfig$$SpringCGLIB$$0.registeredClientRepository(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 63 common frames omitted
+
+2024-04-28T23:12:39.678-04:00  INFO 14524 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : Starting AuthServerApplication using Java 17.0.4.1 with PID 14524 (D:\proyectos\acuario\pagos-app\backend\msvc-auth\target\classes started by wipit in D:\proyectos\acuario\pagos-app\backend\msvc-auth)
+2024-04-28T23:12:39.679-04:00  INFO 14524 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-04-28T23:12:39.731-04:00  INFO 14524 --- [auth-server] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\wipit\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/wipit/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-04-28T23:12:39.732-04:00  INFO 14524 --- [auth-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-28T23:12:39.732-04:00  INFO 14524 --- [auth-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-28T23:12:40.567-04:00  INFO 14524 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-28T23:12:40.688-04:00  INFO 14524 --- [auth-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interface.
+2024-04-28T23:12:41.536-04:00  INFO 14524 --- [auth-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2024-04-28T23:12:41.563-04:00  INFO 14524 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-28T23:12:41.564-04:00  INFO 14524 --- [auth-server] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-04-28T23:12:41.675-04:00  INFO 14524 --- [auth-server] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-28T23:12:41.675-04:00  INFO 14524 --- [auth-server] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1942 ms
+2024-04-28T23:12:42.112-04:00  INFO 14524 --- [auth-server] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-28T23:12:42.278-04:00  INFO 14524 --- [auth-server] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-28T23:12:42.309-04:00  INFO 14524 --- [auth-server] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-28T23:12:42.589-04:00  INFO 14524 --- [auth-server] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-28T23:12:42.607-04:00  INFO 14524 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-28T23:12:43.117-04:00  INFO 14524 --- [auth-server] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1e59685f
+2024-04-28T23:12:43.118-04:00  INFO 14524 --- [auth-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-28T23:12:43.889-04:00  INFO 14524 --- [auth-server] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-28T23:12:46.461-04:00  INFO 14524 --- [auth-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28T23:12:46.789-04:00  INFO 14524 --- [auth-server] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-28T23:12:47.443-04:00  WARN 14524 --- [auth-server] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-28T23:12:48.303-04:00 TRACE 14524 --- [auth-server] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	a.m.a.c.InfoController:
+	{GET [/info/estado]}: info()
+	{GET [/info]}: encriptarClave(String)
+	{GET [/info/clave]}: compararClaves(String,String)
+2024-04-28T23:12:48.311-04:00 TRACE 14524 --- [auth-server] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2024-04-28T23:12:48.314-04:00 DEBUG 14524 --- [auth-server] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2024-04-28T23:12:48.322-04:00 DEBUG 14524 --- [auth-server] [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2024-04-28T23:12:48.556-04:00 TRACE 14524 --- [auth-server] [restartedMain] o.s.w.s.f.support.RouterFunctionMapping  : 0 RouterFunction(s) in 'routerFunctionMapping'
+2024-04-28T23:12:48.575-04:00 TRACE 14524 --- [auth-server] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-04-28T23:12:48.575-04:00 TRACE 14524 --- [auth-server] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-04-28T23:12:48.575-04:00 DEBUG 14524 --- [auth-server] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-04-28T23:12:48.641-04:00  INFO 14524 --- [auth-server] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer$$Lambda$1406/0x0000000801642cf8@413528d5 with [org.springframework.security.web.session.DisableEncodeUrlFilter@16e7b60c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4aaaf020, org.springframework.security.web.context.SecurityContextHolderFilter@2d436305, org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.AuthorizationServerContextFilter@7c37c628, org.springframework.security.web.header.HeaderWriterFilter@2eb75e9b, org.springframework.web.filter.CorsFilter@9109637, org.springframework.security.web.csrf.CsrfFilter@3589e519, org.springframework.security.oauth2.server.authorization.oidc.web.OidcLogoutEndpointFilter@1e1740b1, org.springframework.security.web.authentication.logout.LogoutFilter@65b4d5fa, org.springframework.security.oauth2.server.authorization.web.OAuth2AuthorizationServerMetadataEndpointFilter@2529dbf3, org.springframework.security.oauth2.server.authorization.web.OAuth2AuthorizationEndpointFilter@3da8467f, org.springframework.security.oauth2.server.authorization.web.OAuth2DeviceVerificationEndpointFilter@5e3ea3e3, org.springframework.security.oauth2.server.authorization.oidc.web.OidcProviderConfigurationEndpointFilter@486f73ab, org.springframework.security.oauth2.server.authorization.web.NimbusJwkSetEndpointFilter@37efe6ca, org.springframework.security.oauth2.server.authorization.web.OAuth2ClientAuthenticationFilter@4c86f0e, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@1b78fd25, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58d8cc24, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70369ef7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@618b6440, org.springframework.security.web.access.ExceptionTranslationFilter@3681103c, org.springframework.security.web.access.intercept.AuthorizationFilter@54500f87, org.springframework.security.oauth2.server.authorization.web.OAuth2TokenEndpointFilter@1655638f, org.springframework.security.oauth2.server.authorization.web.OAuth2TokenIntrospectionEndpointFilter@4303a008, org.springframework.security.oauth2.server.authorization.web.OAuth2TokenRevocationEndpointFilter@67b57a7e, org.springframework.security.oauth2.server.authorization.web.OAuth2DeviceAuthorizationEndpointFilter@54533a71, org.springframework.security.oauth2.server.authorization.oidc.web.OidcUserInfoEndpointFilter@1d8b8bb1]
+2024-04-28T23:12:48.679-04:00  INFO 14524 --- [auth-server] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7751bf34, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@509aa7ec, org.springframework.security.web.context.SecurityContextHolderFilter@3b36c32b, org.springframework.security.web.header.HeaderWriterFilter@10c9f654, org.springframework.web.filter.CorsFilter@6f6d034f, org.springframework.security.web.authentication.logout.LogoutFilter@37854f51, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6a339ae4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1615ad54, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@19ff50fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2cd009d8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49319970, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@63ade4e8, org.springframework.security.web.access.ExceptionTranslationFilter@94d9933, org.springframework.security.web.access.intercept.AuthorizationFilter@497ed6d6]
+2024-04-28T23:12:48.867-04:00 DEBUG 14524 --- [auth-server] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-28T23:12:48.920-04:00 DEBUG 14524 --- [auth-server] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-28T23:12:49.056-04:00  INFO 14524 --- [auth-server] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-28T23:12:49.106-04:00  INFO 14524 --- [auth-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9000 (http) with context path ''
+2024-04-28T23:12:49.119-04:00  INFO 14524 --- [auth-server] [restartedMain] a.msvc.auth.AuthServerApplication        : Started AuthServerApplication in 9.841 seconds (process running for 10.302)
+2024-04-28T23:13:31.971-04:00  INFO 14524 --- [auth-server] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-28T23:13:31.973-04:00  INFO 14524 --- [auth-server] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-28T23:13:32.263-04:00  INFO 14524 --- [auth-server] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
