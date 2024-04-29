@@ -1,0 +1,31 @@
+server:
+  port: 8091
+logging:
+  level:
+    root: INFO
+    '[org.springframework.web]': TRACE
+    '[org.springframework.security]': DEBUG
+    '[org.springframework.security.oauth2]': DEBUG
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          # Este es el clientName que se registra en el auth-server
+          client-app:
+            provider: spring
+            client-id: client-app-id
+            client-secret: 123456
+            authorization-grant-type: authorization_code
+            redirect-uri: "http://127.0.0.1:8091/authorized"
+            scope:
+            - openid
+            - read
+            client-name: client-app
+            
+        provider:
+          spring:
+            issuer-uri: "http://127.0.0.1:9000"
+      resourceserver:
+        jwt:
+          issuer-uri: "http://127.0.0.1:9000"

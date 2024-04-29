@@ -9,6 +9,57 @@
       "projectName": "pagos",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-AuthApplication<auth>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "acuario.auth.AuthApplication",
+      "projectName": "auth",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-AuthDefaultApplication<auth-default>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "acuario.authdefault.AuthDefaultApplication",
+      "projectName": "auth-default",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-FactApplication<fact>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "acuario.fact.FactApplication",
+      "projectName": "fact",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-AuthServerApplication<auth-server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "acuario.authserver.AuthServerApplication",
+      "projectName": "auth-server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=53021 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=auth-server"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ClientAppApplication<client-app>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "acuario.clientapp.ClientAppApplication",
+      "projectName": "client-app",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }

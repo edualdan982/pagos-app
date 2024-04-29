@@ -1,4 +1,4 @@
-package acuario.pagos.config.security;
+package acuario.fact.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,10 +21,10 @@ public class SecurityConfig {
     http.authorizeHttpRequests(
         requests -> requests
             .requestMatchers("/authorized", "/info").permitAll()
-            .requestMatchers("/pago/**").hasAnyAuthority(SCOPE_WRITE, SCOPE_READ)
+            .requestMatchers("/init/**").hasAnyAuthority(SCOPE_WRITE, SCOPE_READ)
             .anyRequest().authenticated())
         .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-        .oauth2Login(login -> login.loginPage("/oauth2/authorization/pagos-client-oidc"))
+        .oauth2Login(login -> login.loginPage("/oauth2/authorization/fact-client-oidc"))
         .oauth2Client(Customizer.withDefaults())
         .csrf(AbstractHttpConfigurer::disable)
         .oauth2ResourceServer(oauth2ResourceServer -> oauth2ResourceServer.jwt(Customizer.withDefaults()));

@@ -18,8 +18,11 @@
 	<description>Empaquetador principal</description>
 
 	<modules>
-		<module>pagos</module>
+		<module>auth-server</module>
+		<module>client-app</module>
 		<module>auth</module>
+		<module>pagos</module>
+		<module>fact</module>
 	</modules>
 
 	<properties>
