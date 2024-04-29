@@ -15,7 +15,7 @@ spring:
           msvc-client:
             provider: spring
             client-id: msvc-client-id
-            client-secret: 123456
+            client-secret: pelota12
             authorization-grant-type: authorization_code
             redirect-uri: "http://127.0.0.1:8091/authorized"
             scope:
