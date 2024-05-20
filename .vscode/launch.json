@@ -60,6 +60,26 @@
       "projectName": "client-app",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-AuthServerApplication<msvc-auth>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "acuario.msvc.auth.AuthServerApplication",
+      "projectName": "msvc-auth",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ClientApplication<msvc-client>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "acuario.msvc.client.ClientApplication",
+      "projectName": "msvc-client",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }

@@ -16,6 +16,7 @@ import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.MediaType;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.oauth2.core.AuthorizationGrantType;
 import org.springframework.security.oauth2.core.ClientAuthenticationMethod;
 import org.springframework.security.oauth2.core.oidc.OidcScopes;
@@ -33,6 +34,10 @@ import org.springframework.security.oauth2.server.authorization.settings.TokenSe
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint;
 import org.springframework.security.web.util.matcher.MediaTypeRequestMatcher;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+
 import static org.springframework.security.config.Customizer.withDefaults;
 
 import com.nimbusds.jose.jwk.JWK;
@@ -65,11 +70,20 @@ public class AuthorizationServerConfig {
             .defaultAuthenticationEntryPointFor(
                 new LoginUrlAuthenticationEntryPoint("/login"),
                 new MediaTypeRequestMatcher(MediaType.TEXT_HTML)))
+        .cors(cors -> cors.configurationSource(corsConfigurationSource()))
         // Accept access tokens for User Info and/or Client Registration
         .oauth2ResourceServer((resourceServer) -> resourceServer
             .jwt(withDefaults()));
-
     return http.build();
+  }
+
+  public CorsConfigurationSource corsConfigurationSource() {
+    CorsConfiguration configuration = new CorsConfiguration();
+    configuration.setAllowedOrigins(List.of("*"));
+    configuration.setAllowedMethods(List.of("*"));
+    UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+    source.registerCorsConfiguration("/**", configuration);
+    return source;
   }
 
   @Bean
@@ -88,7 +102,8 @@ public class AuthorizationServerConfig {
     RegisteredClient clientApp = RegisteredClient.withId(uuid)
         // ? Este es el identificador del cliente no confundir con el "clientName"
         .clientId("msvc-client-id")
-        //Cuando hemos creado el usuario en la base de datos, hemos encriptado la contraseña con BCryptPasswordEncoder 
+        // Cuando hemos creado el usuario en la base de datos, hemos encriptado la
+        // contraseña con BCryptPasswordEncoder
         .clientSecret("$2a$10$8/jOZCRJ7hnAb8reB3AasusguXNXhL6Dg..NdjtbwYRNet6ZysEDq")
         .tokenSettings(tokenSettings())
         .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
