@@ -21,6 +21,7 @@ public class SecurityConfig {
             .requestMatchers(HttpMethod.POST, "/create").hasAuthority("SCOPE_write")
             .anyRequest().authenticated())
         .csrf(csrf -> csrf.disable())
+        .cors( cors -> cors.disable())
         // La session sera manejada por el token
         .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
         .oauth2Login(login -> login.loginPage("/oauth2/authorization/msvc-client"))

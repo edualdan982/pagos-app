@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pagosApp": {
+    "pagos-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "pagosApp:build:production"
+              "browserTarget": "pagos-app:build:production"
             },
             "development": {
-              "browserTarget": "pagosApp:build:development"
+              "browserTarget": "pagos-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pagosApp:build"
+            "browserTarget": "pagos-app:build"
           }
         },
         "test": {
