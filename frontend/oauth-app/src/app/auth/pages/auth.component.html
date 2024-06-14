@@ -1,8 +1,12 @@
-<app-side-nav />
-
-<mat-grid-list cols="2" rowHeight="2:1">
-  <mat-grid-tile>1</mat-grid-tile>
-  <mat-grid-tile>2</mat-grid-tile>
-  <mat-grid-tile>3</mat-grid-tile>
-  <mat-grid-tile>4</mat-grid-tile>
-</mat-grid-list>
+<header>
+  <app-side-nav />
+</header>
+<div>
+  <mat-grid-list cols="1">
+    <mat-grid-tile>
+      <div class="tile-content">
+        <router-outlet />
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

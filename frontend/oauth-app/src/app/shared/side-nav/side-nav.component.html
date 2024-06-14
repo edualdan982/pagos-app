@@ -3,12 +3,12 @@
     <mat-icon>home</mat-icon>
   </button>
   <span>OAuth</span>
-  <span class="example-spacer"></span>
+  <span class="spacer-h"></span>
+
   @for (item of menuItems; track $index) {
-  <button mat-button aria-label="menuItem" >
+  <button mat-button aria-label="menuItem" [routerLink]="[item.path]" routerLinkActive="router-link-active">
     {{item.title}}
   </button>
-
   }
 
 </mat-toolbar>

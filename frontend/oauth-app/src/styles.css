@@ -1,4 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Perzonalizadas*/
+.spacer-h {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.spacer-v {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.tile-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
