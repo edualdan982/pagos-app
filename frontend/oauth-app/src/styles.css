@@ -17,11 +17,3 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
-
-.tile-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
