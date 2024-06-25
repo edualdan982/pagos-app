@@ -1,4 +1,4 @@
-package acuario.msvc.auth.service.auth;
+package acuario.msvc.auth.auth.service;
 
 import java.util.Collections;
 import java.util.List;
@@ -15,8 +15,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import acuario.msvc.auth.entity.auth.Usuario;
-import acuario.msvc.auth.idao.auth.IUsuarioDao;
+import acuario.msvc.auth.auth.entity.Usuario;
+import acuario.msvc.auth.auth.idao.IUsuarioDao;
 import acuario.msvc.auth.service.GenericService;
 
 @Service

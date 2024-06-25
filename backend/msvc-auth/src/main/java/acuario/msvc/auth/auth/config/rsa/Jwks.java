@@ -1,4 +1,4 @@
-package acuario.msvc.auth.config.rsa;
+package acuario.msvc.auth.auth.config.rsa;
 
 
 import java.security.KeyPair;

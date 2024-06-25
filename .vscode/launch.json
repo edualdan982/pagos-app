@@ -69,7 +69,8 @@
       "mainClass": "acuario.msvc.auth.AuthServerApplication",
       "projectName": "msvc-auth",
       "args": "",
-      "envFile": "${workspaceFolder}/.env"
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote"
     },
     {
       "type": "java",
@@ -78,6 +79,17 @@
       "cwd": "${workspaceFolder}",
       "mainClass": "acuario.msvc.client.ClientApplication",
       "projectName": "msvc-client",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-PagosApplication<pagos>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "acuario.msvc.pagos.PagosApplication",
+      "projectName": "pagos",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
     }

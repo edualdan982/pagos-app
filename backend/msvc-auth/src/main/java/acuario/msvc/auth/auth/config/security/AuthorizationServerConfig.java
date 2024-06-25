@@ -1,4 +1,4 @@
-package acuario.msvc.auth.config.security;
+package acuario.msvc.auth.auth.config.security;
 
 import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
@@ -137,7 +137,7 @@ public class AuthorizationServerConfig {
         .scope(OidcScopes.OPENID)
         .scope(OidcScopes.PROFILE)
         .build();
-    // registerClients.add(pagosApp);
+    registerClients.add(pagosApp);
 
     return new InMemoryRegisteredClientRepository(registerClients);
   }

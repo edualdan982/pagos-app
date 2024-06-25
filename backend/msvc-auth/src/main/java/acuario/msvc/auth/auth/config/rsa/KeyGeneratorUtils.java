@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package acuario.msvc.auth.config.rsa;
+package acuario.msvc.auth.auth.config.rsa;
 
 import java.math.BigInteger;
 import java.security.KeyPair;

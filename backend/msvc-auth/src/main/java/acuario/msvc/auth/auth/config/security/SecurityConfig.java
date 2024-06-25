@@ -1,4 +1,4 @@
-package acuario.msvc.auth.config.security;
+package acuario.msvc.auth.auth.config.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

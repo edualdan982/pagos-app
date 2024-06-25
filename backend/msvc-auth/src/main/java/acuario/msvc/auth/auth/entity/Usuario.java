@@ -1,4 +1,4 @@
-package acuario.msvc.auth.entity.auth;
+package acuario.msvc.auth.auth.entity;
 
 import acuario.msvc.auth.entity.GenericEntity;
 import jakarta.persistence.Column;

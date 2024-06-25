@@ -1,4 +1,4 @@
-package acuario.msvc.auth.idao.auth;
+package acuario.msvc.auth.auth.idao;
 
 import java.util.List;
 import java.util.Optional;
@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
-import acuario.msvc.auth.entity.auth.Usuario;
+import acuario.msvc.auth.auth.entity.Usuario;
 
 public interface IUsuarioDao extends JpaRepository<Usuario, Integer> {
 
