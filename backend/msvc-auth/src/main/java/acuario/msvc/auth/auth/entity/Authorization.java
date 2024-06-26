@@ -1,17 +1,15 @@
 package acuario.msvc.auth.auth.entity;
 
-import java.util.Date;
+import java.time.Instant;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
 
 @Entity
 @Table(name = "oauth2_authorization")
-public class OAuth2Authorization {
+public class Authorization {
   @Id
   @Column(length = 100, nullable = false)
   private String id;
@@ -37,11 +35,9 @@ public class OAuth2Authorization {
   @Column(columnDefinition = "CLOB default null")
   private String authorizationCodeValue;
 
-  @Temporal(TemporalType.TIMESTAMP)
-  private Date authorizationCodeIssuedAt;
+  private Instant authorizationCodeIssuedAt;
 
-  @Temporal(TemporalType.TIMESTAMP)
-  private Date authorizationCodeExpiresAt;
+  private Instant authorizationCodeExpiresAt;
 
   @Column(columnDefinition = "CLOB default null")
   private String authorizationCodeMetadata;
@@ -49,11 +45,9 @@ public class OAuth2Authorization {
   @Column(columnDefinition = "CLOB default null")
   private String accessTokenValue;
 
-  @Temporal(TemporalType.TIMESTAMP)
-  private Date accessTokenIssuedAt;
+  private Instant accessTokenIssuedAt;
 
-  @Temporal(TemporalType.TIMESTAMP)
-  private Date accessTokenExpiresAt;
+  private Instant accessTokenExpiresAt;
 
   @Column(columnDefinition = "CLOB default null")
   private String accessTokenMetadata;
@@ -67,23 +61,21 @@ public class OAuth2Authorization {
   @Column(columnDefinition = "CLOB default null")
   private String oidcIdTokenValue;
 
-  @Temporal(TemporalType.TIMESTAMP)
-  private Date oidcIdTokenIssuedAt;
+  private Instant oidcIdTokenIssuedAt;
 
-  @Temporal(TemporalType.TIMESTAMP)
-  private Date oidcIdTokenExpiresAt;
+  private Instant oidcIdTokenExpiresAt;
 
   @Column(columnDefinition = "CLOB default null")
   private String oidcIdTokenMetadata;
+  @Column(length = 2000)
+  private String oidcIdTokenClaims;
 
   @Column(columnDefinition = "CLOB default null")
   private String refreshTokenValue;
 
-  @Temporal(TemporalType.TIMESTAMP)
-  private Date refreshTokenIssuedAt;
+  private Instant refreshTokenIssuedAt;
 
-  @Temporal(TemporalType.TIMESTAMP)
-  private Date refreshTokenExpires_At;
+  private Instant refreshTokenExpiresAt;
 
   @Column(columnDefinition = "CLOB default null")
   private String refreshTokenMetadata;
@@ -91,11 +83,9 @@ public class OAuth2Authorization {
   @Column(columnDefinition = "CLOB default null")
   private String userCodeValue;
 
-  @Temporal(TemporalType.TIMESTAMP)
-  private Date userCodeIssuedAt;
+  private Instant userCodeIssuedAt;
 
-  @Temporal(TemporalType.TIMESTAMP)
-  private Date userCodeExpiresAt;
+  private Instant userCodeExpiresAt;
 
   @Column(columnDefinition = "CLOB default null")
   private String userCodeMetadata;
@@ -103,10 +93,8 @@ public class OAuth2Authorization {
   @Column(columnDefinition = "CLOB default null")
   private String deviceCodeValue;
 
-  @Temporal(TemporalType.TIMESTAMP)
-  private Date deviceCodeIssuedAt;
-  @Temporal(TemporalType.TIMESTAMP)
-  private Date deviceCodeExpiresAt;
+  private Instant deviceCodeIssuedAt;
+  private Instant deviceCodeExpiresAt;
 
   @Column(columnDefinition = "CLOB default null")
   private String deviceCodeMetadata;
@@ -175,19 +163,19 @@ public class OAuth2Authorization {
     this.authorizationCodeValue = authorizationCodeValue;
   }
 
-  public Date getAuthorizationCodeIssuedAt() {
+  public Instant getAuthorizationCodeIssuedAt() {
     return authorizationCodeIssuedAt;
   }
 
-  public void setAuthorizationCodeIssuedAt(Date authorizationCodeIssuedAt) {
+  public void setAuthorizationCodeIssuedAt(Instant authorizationCodeIssuedAt) {
     this.authorizationCodeIssuedAt = authorizationCodeIssuedAt;
   }
 
-  public Date getAuthorizationCodeExpiresAt() {
+  public Instant getAuthorizationCodeExpiresAt() {
     return authorizationCodeExpiresAt;
   }
 
-  public void setAuthorizationCodeExpiresAt(Date authorizationCodeExpiresAt) {
+  public void setAuthorizationCodeExpiresAt(Instant authorizationCodeExpiresAt) {
     this.authorizationCodeExpiresAt = authorizationCodeExpiresAt;
   }
 
@@ -207,19 +195,19 @@ public class OAuth2Authorization {
     this.accessTokenValue = accessTokenValue;
   }
 
-  public Date getAccessTokenIssuedAt() {
+  public Instant getAccessTokenIssuedAt() {
     return accessTokenIssuedAt;
   }
 
-  public void setAccessTokenIssuedAt(Date accessTokenIssuedAt) {
+  public void setAccessTokenIssuedAt(Instant accessTokenIssuedAt) {
     this.accessTokenIssuedAt = accessTokenIssuedAt;
   }
 
-  public Date getAccessTokenExpiresAt() {
+  public Instant getAccessTokenExpiresAt() {
     return accessTokenExpiresAt;
   }
 
-  public void setAccessTokenExpiresAt(Date accessTokenExpiresAt) {
+  public void setAccessTokenExpiresAt(Instant accessTokenExpiresAt) {
     this.accessTokenExpiresAt = accessTokenExpiresAt;
   }
 
@@ -255,19 +243,19 @@ public class OAuth2Authorization {
     this.oidcIdTokenValue = oidcIdTokenValue;
   }
 
-  public Date getOidcIdTokenIssuedAt() {
+  public Instant getOidcIdTokenIssuedAt() {
     return oidcIdTokenIssuedAt;
   }
 
-  public void setOidcIdTokenIssuedAt(Date oidcIdTokenIssuedAt) {
+  public void setOidcIdTokenIssuedAt(Instant oidcIdTokenIssuedAt) {
     this.oidcIdTokenIssuedAt = oidcIdTokenIssuedAt;
   }
 
-  public Date getOidcIdTokenExpiresAt() {
+  public Instant getOidcIdTokenExpiresAt() {
     return oidcIdTokenExpiresAt;
   }
 
-  public void setOidcIdTokenExpiresAt(Date oidcIdTokenExpiresAt) {
+  public void setOidcIdTokenExpiresAt(Instant oidcIdTokenExpiresAt) {
     this.oidcIdTokenExpiresAt = oidcIdTokenExpiresAt;
   }
 
@@ -287,20 +275,12 @@ public class OAuth2Authorization {
     this.refreshTokenValue = refreshTokenValue;
   }
 
-  public Date getRefreshTokenIssuedAt() {
+  public Instant getRefreshTokenIssuedAt() {
     return refreshTokenIssuedAt;
   }
 
-  public void setRefreshTokenIssuedAt(Date refreshTokenIssuedAt) {
+  public void setRefreshTokenIssuedAt(Instant refreshTokenIssuedAt) {
     this.refreshTokenIssuedAt = refreshTokenIssuedAt;
-  }
-
-  public Date getRefreshTokenExpires_At() {
-    return refreshTokenExpires_At;
-  }
-
-  public void setRefreshTokenExpires_At(Date refreshTokenExpires_At) {
-    this.refreshTokenExpires_At = refreshTokenExpires_At;
   }
 
   public String getRefreshTokenMetadata() {
@@ -319,19 +299,19 @@ public class OAuth2Authorization {
     this.userCodeValue = userCodeValue;
   }
 
-  public Date getUserCodeIssuedAt() {
+  public Instant getUserCodeIssuedAt() {
     return userCodeIssuedAt;
   }
 
-  public void setUserCodeIssuedAt(Date userCodeIssuedAt) {
+  public void setUserCodeIssuedAt(Instant userCodeIssuedAt) {
     this.userCodeIssuedAt = userCodeIssuedAt;
   }
 
-  public Date getUserCodeExpiresAt() {
+  public Instant getUserCodeExpiresAt() {
     return userCodeExpiresAt;
   }
 
-  public void setUserCodeExpiresAt(Date userCodeExpiresAt) {
+  public void setUserCodeExpiresAt(Instant userCodeExpiresAt) {
     this.userCodeExpiresAt = userCodeExpiresAt;
   }
 
@@ -351,19 +331,19 @@ public class OAuth2Authorization {
     this.deviceCodeValue = deviceCodeValue;
   }
 
-  public Date getDeviceCodeIssuedAt() {
+  public Instant getDeviceCodeIssuedAt() {
     return deviceCodeIssuedAt;
   }
 
-  public void setDeviceCodeIssuedAt(Date deviceCodeIssuedAt) {
+  public void setDeviceCodeIssuedAt(Instant deviceCodeIssuedAt) {
     this.deviceCodeIssuedAt = deviceCodeIssuedAt;
   }
 
-  public Date getDeviceCodeExpiresAt() {
+  public Instant getDeviceCodeExpiresAt() {
     return deviceCodeExpiresAt;
   }
 
-  public void setDeviceCodeExpiresAt(Date deviceCodeExpiresAt) {
+  public void setDeviceCodeExpiresAt(Instant deviceCodeExpiresAt) {
     this.deviceCodeExpiresAt = deviceCodeExpiresAt;
   }
 
@@ -373,6 +353,22 @@ public class OAuth2Authorization {
 
   public void setDeviceCodeMetadata(String deviceCodeMetadata) {
     this.deviceCodeMetadata = deviceCodeMetadata;
+  }
+
+  public Instant getRefreshTokenExpiresAt() {
+    return refreshTokenExpiresAt;
+  }
+
+  public void setRefreshTokenExpiresAt(Instant refreshTokenExpiresAt) {
+    this.refreshTokenExpiresAt = refreshTokenExpiresAt;
+  }
+
+  public String getOidcIdTokenClaims() {
+    return oidcIdTokenClaims;
+  }
+
+  public void setOidcIdTokenClaims(String oidcIdTokenClaims) {
+    this.oidcIdTokenClaims = oidcIdTokenClaims;
   }
 
 }
