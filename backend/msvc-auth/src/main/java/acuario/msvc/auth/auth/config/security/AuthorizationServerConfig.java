@@ -46,6 +46,8 @@ import com.nimbusds.jose.jwk.source.ImmutableJWKSet;
 import com.nimbusds.jose.jwk.source.JWKSource;
 import com.nimbusds.jose.proc.SecurityContext;
 
+import acuario.msvc.auth.auth.repositories.JpaRegisteredClientRepository;
+
 @Configuration
 
 public class AuthorizationServerConfig {
@@ -92,10 +94,11 @@ public class AuthorizationServerConfig {
         .build();
   }
 
-  @Bean
+  /*@Bean
   public RegisteredClientRepository registeredClientRepository() {
+    
     List<RegisteredClient> registerClients = new ArrayList<>();
-
+    
     String uuid = UUID.randomUUID().toString();
     log.info("UUID client: " + uuid);
     RegisteredClient clientApp = RegisteredClient.withId(uuid)
@@ -138,8 +141,10 @@ public class AuthorizationServerConfig {
         .build();
     registerClients.add(pagosApp);
 
+    
+
     return new InMemoryRegisteredClientRepository(registerClients);
-  }
+  }*/
 
   @Bean
   JwtEncoder jwtEncoder() {

@@ -5,6 +5,7 @@ import java.time.Instant;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
 import jakarta.persistence.Table;
 
 @Entity
@@ -26,30 +27,35 @@ public class Authorization {
   @Column(length = 1000, columnDefinition = "varchar2(1000) default null")
   private String authorizedScopes;
 
-  @Column(columnDefinition = "CLOB default null")
+  @Lob
+  @Column(columnDefinition = "CLOB")
   private String attributes;
 
   @Column(length = 500, columnDefinition = "varchar2(500) default null")
   private String state;
 
-  @Column(columnDefinition = "CLOB default null")
+  @Lob
+  @Column(columnDefinition = "CLOB")
   private String authorizationCodeValue;
 
   private Instant authorizationCodeIssuedAt;
 
   private Instant authorizationCodeExpiresAt;
 
-  @Column(columnDefinition = "CLOB default null")
+  @Lob
+  @Column(columnDefinition = "CLOB")
   private String authorizationCodeMetadata;
 
-  @Column(columnDefinition = "CLOB default null")
+  @Lob
+  @Column(columnDefinition = "CLOB")
   private String accessTokenValue;
 
   private Instant accessTokenIssuedAt;
 
   private Instant accessTokenExpiresAt;
 
-  @Column(columnDefinition = "CLOB default null")
+  @Lob
+  @Column(columnDefinition = "CLOB")
   private String accessTokenMetadata;
 
   @Column(length = 100, columnDefinition = "varchar2(100) default null")
@@ -58,45 +64,53 @@ public class Authorization {
   @Column(length = 1000, columnDefinition = "varchar2(1000) default null")
   private String accessTokenScopes;
 
-  @Column(columnDefinition = "CLOB default null")
+  @Lob
+  @Column(columnDefinition = "CLOB")
   private String oidcIdTokenValue;
 
   private Instant oidcIdTokenIssuedAt;
 
   private Instant oidcIdTokenExpiresAt;
 
-  @Column(columnDefinition = "CLOB default null")
+  @Lob
+  @Column(columnDefinition = "CLOB")
   private String oidcIdTokenMetadata;
   @Column(length = 2000)
   private String oidcIdTokenClaims;
 
-  @Column(columnDefinition = "CLOB default null")
+  @Lob
+  @Column(columnDefinition = "CLOB")
   private String refreshTokenValue;
 
   private Instant refreshTokenIssuedAt;
 
   private Instant refreshTokenExpiresAt;
 
-  @Column(columnDefinition = "CLOB default null")
+  @Lob
+  @Column(columnDefinition = "CLOB")
   private String refreshTokenMetadata;
 
-  @Column(columnDefinition = "CLOB default null")
+  @Lob
+  @Column(columnDefinition = "CLOB")
   private String userCodeValue;
 
   private Instant userCodeIssuedAt;
 
   private Instant userCodeExpiresAt;
 
-  @Column(columnDefinition = "CLOB default null")
+  @Lob
+  @Column(columnDefinition = "CLOB")
   private String userCodeMetadata;
 
-  @Column(columnDefinition = "CLOB default null")
+  @Lob
+  @Column(columnDefinition = "CLOB")
   private String deviceCodeValue;
 
   private Instant deviceCodeIssuedAt;
   private Instant deviceCodeExpiresAt;
 
-  @Column(columnDefinition = "CLOB default null")
+  @Lob
+  @Column(columnDefinition = "CLOB")
   private String deviceCodeMetadata;
 
   public String getId() {

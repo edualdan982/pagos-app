@@ -1,0 +1,156 @@
+2024-07-02T14:49:34.574-04:00  INFO 6648 --- [msvc-auth] [restartedMain] a.msvc.auth.AuthServerApplication        : Starting AuthServerApplication using Java 17.0.11 with PID 6648 (D:\proyectos\acuario\pagos-app\backend\msvc-auth\target\classes started by dtic in D:\proyectos\acuario\pagos-app)
+2024-07-02T14:49:34.574-04:00  INFO 6648 --- [msvc-auth] [restartedMain] a.msvc.auth.AuthServerApplication        : No active profile set, falling back to 1 default profile: "default"
+2024-07-02T14:49:34.621-04:00  INFO 6648 --- [msvc-auth] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\dtic\.m2\repository\com\oracle\database\jdbc\ojdbc11\21.9.0.0\ojdbc11-21.9.0.0.jar referenced one or more files that do not exist: file:/C:/Users/dtic/.m2/repository/com/oracle/database/jdbc/ojdbc11/21.9.0.0/oraclepki.jar
+2024-07-02T14:49:34.622-04:00  INFO 6648 --- [msvc-auth] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-07-02T14:49:34.622-04:00  INFO 6648 --- [msvc-auth] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-07-02T14:49:35.270-04:00  INFO 6648 --- [msvc-auth] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-02T14:49:35.345-04:00  INFO 6648 --- [msvc-auth] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 4 JPA repository interfaces.
+2024-07-02T14:49:35.995-04:00  INFO 6648 --- [msvc-auth] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9000 (http)
+2024-07-02T14:49:36.013-04:00  INFO 6648 --- [msvc-auth] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-02T14:49:36.013-04:00  INFO 6648 --- [msvc-auth] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-07-02T14:49:36.087-04:00  INFO 6648 --- [msvc-auth] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-02T14:49:36.088-04:00  INFO 6648 --- [msvc-auth] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1466 ms
+2024-07-02T14:49:36.340-04:00  INFO 6648 --- [msvc-auth] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-02T14:49:36.404-04:00  INFO 6648 --- [msvc-auth] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-07-02T14:49:36.443-04:00  INFO 6648 --- [msvc-auth] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-02T14:49:36.674-04:00  INFO 6648 --- [msvc-auth] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-02T14:49:36.704-04:00  INFO 6648 --- [msvc-auth] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-02T14:49:36.977-04:00  INFO 6648 --- [msvc-auth] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5c7c18e7
+2024-07-02T14:49:36.977-04:00  INFO 6648 --- [msvc-auth] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-02T14:49:37.908-04:00  INFO 6648 --- [msvc-auth] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-02T14:49:38.249-04:00  INFO 6648 --- [msvc-auth] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-02T14:49:38.499-04:00  INFO 6648 --- [msvc-auth] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-02T14:49:38.965-04:00 DEBUG 6648 --- [msvc-auth] [restartedMain] o.s.s.jackson2.SecurityJackson2Modules   : Loaded module org.springframework.security.jackson2.CoreJackson2Module, now registering
+2024-07-02T14:49:38.965-04:00 DEBUG 6648 --- [msvc-auth] [restartedMain] o.s.s.jackson2.SecurityJackson2Modules   : Cannot load module org.springframework.security.cas.jackson2.CasJackson2Module
+
+java.lang.ClassNotFoundException: org.springframework.security.cas.jackson2.CasJackson2Module
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.2.5.jar:3.2.5]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:304) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.security.jackson2.SecurityJackson2Modules.loadAndGetInstance(SecurityJackson2Modules.java:127) ~[spring-security-core-6.2.4.jar:6.2.4]
+	at org.springframework.security.jackson2.SecurityJackson2Modules.addToModulesList(SecurityJackson2Modules.java:172) ~[spring-security-core-6.2.4.jar:6.2.4]
+	at org.springframework.security.jackson2.SecurityJackson2Modules.getModules(SecurityJackson2Modules.java:146) ~[spring-security-core-6.2.4.jar:6.2.4]
+	at acuario.msvc.auth.auth.repositories.JpaRegisteredClientRepository.<init>(JpaRegisteredClientRepository.java:36) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:208) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:111) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:306) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at acuario.msvc.auth.AuthServerApplication.main(AuthServerApplication.java:9) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.5.jar:3.2.5]
+
+2024-07-02T14:49:38.974-04:00 DEBUG 6648 --- [msvc-auth] [restartedMain] o.s.s.jackson2.SecurityJackson2Modules   : Loaded module org.springframework.security.web.jackson2.WebJackson2Module, now registering
+2024-07-02T14:49:38.976-04:00 DEBUG 6648 --- [msvc-auth] [restartedMain] o.s.s.jackson2.SecurityJackson2Modules   : Loaded module org.springframework.security.web.server.jackson2.WebServerJackson2Module, now registering
+2024-07-02T14:49:38.977-04:00 DEBUG 6648 --- [msvc-auth] [restartedMain] o.s.s.jackson2.SecurityJackson2Modules   : Loaded module org.springframework.security.web.jackson2.WebServletJackson2Module, now registering
+2024-07-02T14:49:38.978-04:00 DEBUG 6648 --- [msvc-auth] [restartedMain] o.s.s.jackson2.SecurityJackson2Modules   : Loaded module com.fasterxml.jackson.datatype.jsr310.JavaTimeModule, now registering
+2024-07-02T14:49:39.076-04:00 DEBUG 6648 --- [msvc-auth] [restartedMain] o.s.s.jackson2.SecurityJackson2Modules   : Loaded module org.springframework.security.jackson2.CoreJackson2Module, now registering
+2024-07-02T14:49:39.077-04:00 DEBUG 6648 --- [msvc-auth] [restartedMain] o.s.s.jackson2.SecurityJackson2Modules   : Cannot load module org.springframework.security.cas.jackson2.CasJackson2Module
+
+java.lang.ClassNotFoundException: org.springframework.security.cas.jackson2.CasJackson2Module
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.2.5.jar:3.2.5]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:304) ~[spring-core-6.1.6.jar:6.1.6]
+	at org.springframework.security.jackson2.SecurityJackson2Modules.loadAndGetInstance(SecurityJackson2Modules.java:127) ~[spring-security-core-6.2.4.jar:6.2.4]
+	at org.springframework.security.jackson2.SecurityJackson2Modules.addToModulesList(SecurityJackson2Modules.java:172) ~[spring-security-core-6.2.4.jar:6.2.4]
+	at org.springframework.security.jackson2.SecurityJackson2Modules.getModules(SecurityJackson2Modules.java:146) ~[spring-security-core-6.2.4.jar:6.2.4]
+	at acuario.msvc.auth.auth.service.JpaOAuth2AuthorizationService.<init>(JpaOAuth2AuthorizationService.java:51) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:208) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:111) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:306) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at acuario.msvc.auth.AuthServerApplication.main(AuthServerApplication.java:9) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.5.jar:3.2.5]
+
+2024-07-02T14:49:39.081-04:00 DEBUG 6648 --- [msvc-auth] [restartedMain] o.s.s.jackson2.SecurityJackson2Modules   : Loaded module org.springframework.security.web.jackson2.WebJackson2Module, now registering
+2024-07-02T14:49:39.081-04:00 DEBUG 6648 --- [msvc-auth] [restartedMain] o.s.s.jackson2.SecurityJackson2Modules   : Loaded module org.springframework.security.web.server.jackson2.WebServerJackson2Module, now registering
+2024-07-02T14:49:39.082-04:00 DEBUG 6648 --- [msvc-auth] [restartedMain] o.s.s.jackson2.SecurityJackson2Modules   : Loaded module org.springframework.security.web.jackson2.WebServletJackson2Module, now registering
+2024-07-02T14:49:39.082-04:00 DEBUG 6648 --- [msvc-auth] [restartedMain] o.s.s.jackson2.SecurityJackson2Modules   : Loaded module com.fasterxml.jackson.datatype.jsr310.JavaTimeModule, now registering
+2024-07-02T14:49:39.124-04:00  WARN 6648 --- [msvc-auth] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-02T14:49:39.758-04:00  INFO 6648 --- [msvc-auth] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer$$Lambda$1456/0x000001d3dea79bd8@760eb757 with [org.springframework.security.web.session.DisableEncodeUrlFilter@4687db3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58dc0d56, org.springframework.security.web.context.SecurityContextHolderFilter@b5c5009, org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.AuthorizationServerContextFilter@3883acf2, org.springframework.security.web.header.HeaderWriterFilter@5715a46a, org.springframework.web.filter.CorsFilter@11dc6c48, org.springframework.security.web.csrf.CsrfFilter@7bc0d1fe, org.springframework.security.oauth2.server.authorization.oidc.web.OidcLogoutEndpointFilter@647c57ac, org.springframework.security.web.authentication.logout.LogoutFilter@5b1773d2, org.springframework.security.oauth2.server.authorization.web.OAuth2AuthorizationServerMetadataEndpointFilter@1899348c, org.springframework.security.oauth2.server.authorization.web.OAuth2AuthorizationEndpointFilter@33912f57, org.springframework.security.oauth2.server.authorization.web.OAuth2DeviceVerificationEndpointFilter@2e1a718a, org.springframework.security.oauth2.server.authorization.oidc.web.OidcProviderConfigurationEndpointFilter@45561003, org.springframework.security.oauth2.server.authorization.web.NimbusJwkSetEndpointFilter@3115c408, org.springframework.security.oauth2.server.authorization.web.OAuth2ClientAuthenticationFilter@2ac1c341, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@42b0860, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ba6e6c1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24164934, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12ebd52b, org.springframework.security.web.access.ExceptionTranslationFilter@36db6036, org.springframework.security.web.access.intercept.AuthorizationFilter@258c09f2, org.springframework.security.oauth2.server.authorization.web.OAuth2TokenEndpointFilter@4774d724, org.springframework.security.oauth2.server.authorization.web.OAuth2TokenIntrospectionEndpointFilter@def344b, org.springframework.security.oauth2.server.authorization.web.OAuth2TokenRevocationEndpointFilter@6cba3bfd, org.springframework.security.oauth2.server.authorization.web.OAuth2DeviceAuthorizationEndpointFilter@78d61384, org.springframework.security.oauth2.server.authorization.oidc.web.OidcUserInfoEndpointFilter@11191748]
+2024-07-02T14:49:39.822-04:00 TRACE 6648 --- [msvc-auth] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	a.m.a.c.InfoController:
+	{GET [/info/estado]}: info()
+	{GET [/info]}: encriptarClave(String)
+	{GET [/info/clave]}: compararClaves(String,String)
+2024-07-02T14:49:39.834-04:00 TRACE 6648 --- [msvc-auth] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2024-07-02T14:49:39.841-04:00 DEBUG 6648 --- [msvc-auth] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2024-07-02T14:49:39.850-04:00 DEBUG 6648 --- [msvc-auth] [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2024-07-02T14:49:39.939-04:00 TRACE 6648 --- [msvc-auth] [restartedMain] o.s.w.s.f.support.RouterFunctionMapping  : 0 RouterFunction(s) in 'routerFunctionMapping'
+2024-07-02T14:49:39.956-04:00 TRACE 6648 --- [msvc-auth] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/webjars/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-07-02T14:49:39.957-04:00 TRACE 6648 --- [msvc-auth] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped [/**] onto ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-07-02T14:49:39.957-04:00 DEBUG 6648 --- [msvc-auth] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-07-02T14:49:39.977-04:00  INFO 6648 --- [msvc-auth] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@29b219a8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ab32678, org.springframework.security.web.context.SecurityContextHolderFilter@5dd67f22, org.springframework.security.web.header.HeaderWriterFilter@56fc3205, org.springframework.security.web.authentication.logout.LogoutFilter@69e0b9d0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@457006ef, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@13b6e2b0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@330024b7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70ac95f0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24ed8032, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76820b46, org.springframework.security.web.access.ExceptionTranslationFilter@6ea74659, org.springframework.security.web.access.intercept.AuthorizationFilter@5439d24]
+2024-07-02T14:49:40.107-04:00 DEBUG 6648 --- [msvc-auth] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-07-02T14:49:40.148-04:00 DEBUG 6648 --- [msvc-auth] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-07-02T14:49:40.257-04:00  INFO 6648 --- [msvc-auth] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-07-02T14:49:40.295-04:00  INFO 6648 --- [msvc-auth] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9000 (http) with context path ''
+2024-07-02T14:49:40.308-04:00  INFO 6648 --- [msvc-auth] [restartedMain] a.msvc.auth.AuthServerApplication        : Started AuthServerApplication in 6.084 seconds (process running for 6.544)
+2024-07-02T17:12:01.288-04:00  WARN 6648 --- [msvc-auth] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m53s11ms309µs500ns).

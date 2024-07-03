@@ -1,7 +1,5 @@
 package acuario.msvc.auth.auth.entity.client;
 
-import java.util.Date;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
