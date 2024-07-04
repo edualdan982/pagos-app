@@ -46,12 +46,11 @@ import com.nimbusds.jose.jwk.source.ImmutableJWKSet;
 import com.nimbusds.jose.jwk.source.JWKSource;
 import com.nimbusds.jose.proc.SecurityContext;
 
-import acuario.msvc.auth.auth.repositories.JpaRegisteredClientRepository;
-
 @Configuration
 
 public class AuthorizationServerConfig {
   private static final Logger log = LoggerFactory.getLogger(AuthorizationServerConfig.class);
+  
   @Value("${jwt.public.key}")
   RSAPublicKey key;
   @Value("${jwt.private.key}")

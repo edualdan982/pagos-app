@@ -6,6 +6,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import java.time.Instant;
 
+import org.springframework.security.oauth2.server.authorization.client.RegisteredClient;
+
 @Entity
 @Table(name = "oauth2_registered_client")
 public class Client {
@@ -38,6 +40,15 @@ public class Client {
   private String clientSettings;
   @Column(length = 2000, nullable = false)
   private String tokenSettings;
+
+
+  
+  public Client() {
+  }
+
+  public Client(RegisteredClient registeredClient){
+    
+  }
 
   public String getId() {
     return id;
