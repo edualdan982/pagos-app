@@ -1,20 +1,16 @@
 package acuario.msvc.auth.init.service;
 
-import java.time.Duration;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.time.Duration;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.UUID;
-
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
-import jakarta.persistence.Query;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,7 +27,11 @@ import org.springframework.stereotype.Service;
 
 import acuario.msvc.auth.auth.entity.client.Client;
 import acuario.msvc.auth.auth.repositories.ClientRepository;
+import acuario.msvc.auth.auth.repositories.JpaRegisteredClientRepository;
 import acuario.msvc.auth.init.TypeQuerys;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
+import jakarta.persistence.Query;
 
 @Service
 public class DataInitService implements IDataInitService {
@@ -41,11 +41,20 @@ public class DataInitService implements IDataInitService {
   private EntityManager em;
   @Value("${spring.datasource.username}")
   private String db_username;
+  @Value("${spring.datasource.url}")
+  private String BD;
 
   @Autowired
   private Environment env;
   @Autowired
-  private ClientRepository clientRepository;
+  private JpaRegisteredClientRepository jpaRegisteredClientRepository;
+
+  @Override
+  public void printParams() {
+    // log.info("*******Entorno******* --> " + ENTORNO);
+    log.info("*******Base de Datos*******  -->  " + BD);
+    log.info("SISTEMA OPERATIVO: {}", System.getProperty("os.name").toLowerCase());
+  }
 
   @Override
   public Connection crearConexion(String url, String username, String password) {
@@ -122,12 +131,11 @@ public class DataInitService implements IDataInitService {
   public Map<String, Object> cargarClientesInit() {
     Map<String, Object> result = new HashMap<>();
 
-    List<Client> registerClients = new ArrayList<>();
-
     String uuid = "mscv-client-default-0001";
-    Client clientApp = new Client(RegisteredClient.withId(uuid)
+    RegisteredClient clientApp = RegisteredClient.withId(uuid)
         // ? Este es el identificador del cliente no confundir con el "clientName"
         .clientId("msvc-client-id")
+        .clientName("msvc-client")
         // Cuando hemos creado el usuario en la base de datos, hemos encriptado la
         // contraseña con BCryptPasswordEncoder
         .clientSecret("$2a$10$8/jOZCRJ7hnAb8reB3AasusguXNXhL6Dg..NdjtbwYRNet6ZysEDq")
@@ -140,19 +148,20 @@ public class DataInitService implements IDataInitService {
         .redirectUri("http://127.0.0.1:8091/authorized")
         .postLogoutRedirectUri("http://127.0.0.1:8091/logout")
         .scope("read")
-        .scope("write")
+        // .scope("write")
         .scope(OidcScopes.OPENID)
         .scope(OidcScopes.PROFILE)
         .clientSettings(ClientSettings.builder().requireAuthorizationConsent(false).build())
-        .build());
-    if (clientRepository.verificarClient(uuid))
-      registerClients.add(clientApp);
+        .build();
+    jpaRegisteredClientRepository.save(clientApp);
+    result.put("client-app", "Este cliente a sido registrado");
 
     uuid = "mscv-pagos-default-0002";
-    Client pagosApp = new Client(RegisteredClient.withId(uuid)
+    RegisteredClient pagosApp = RegisteredClient.withId(uuid)
         .clientId("msvc-pagos-id")
+        .clientName("msvc-pagos")
         .clientSecret("{noop}123456")
-        .tokenSettings(tokenSettings())
+        // .tokenSettings(tokenSettings())
         .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
         .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
         .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
@@ -163,22 +172,17 @@ public class DataInitService implements IDataInitService {
         .scope("write")
         .scope(OidcScopes.OPENID)
         .scope(OidcScopes.PROFILE)
-        .build());
-    registerClients.add(pagosApp);
-    if (clientRepository.verificarClient(uuid))
-      registerClients.add(pagosApp);
+        .build();
 
-    if (!registerClients.isEmpty()) {
-      clientRepository.saveAll(registerClients);
-      result.put("mensaje", "Se han registro los clientes.");
-    }
+    jpaRegisteredClientRepository.save(pagosApp);
+    result.put("pagos-app", "Este cliente a sido registrado");
 
     return result;
   }
 
   private TokenSettings tokenSettings() {
     return TokenSettings.builder()
-        .accessTokenTimeToLive(Duration.ofDays(360L))
+        .accessTokenTimeToLive(Duration.ofDays(2L))
         .build();
   }
 

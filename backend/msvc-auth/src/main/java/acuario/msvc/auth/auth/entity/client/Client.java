@@ -1,13 +1,12 @@
 package acuario.msvc.auth.auth.entity.client;
 
+import java.time.Instant;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
-import java.time.Instant;
-import java.util.stream.Collectors;
-
-import org.springframework.security.oauth2.server.authorization.client.RegisteredClient;
 
 @Entity
 @Table(name = "oauth2_registered_client")
@@ -19,9 +18,9 @@ public class Client {
   @Column(length = 100, nullable = false)
   private String clientId;
 
-  @Column(columnDefinition = "timestamp(6) DEFAULT CURRENT_TIMESTAMP", nullable = false)
+  @Column(columnDefinition = "timestamp(6) default current_timestamp")
   private Instant clientIdIssuedAt;
-  @Column(length = 200, columnDefinition = "varchar2(200) default null")
+  @Column(length = 200)
   private String clientSecret;
 
   private Instant clientSecretExpiresAt;
@@ -31,9 +30,9 @@ public class Client {
   private String clientAuthenticationMethods;
   @Column(length = 1000, nullable = false)
   private String authorizationGrantTypes;
-  @Column(length = 1000, columnDefinition = "varchar2(1000) default null")
+  @Column(length = 1000)
   private String redirectUris;
-  @Column(length = 1000, columnDefinition = "varchar2(1000) default null")
+  @Column(length = 1000)
   private String postLogoutRedirectUris;
   @Column(length = 1000, nullable = false)
   private String scopes;
@@ -43,41 +42,13 @@ public class Client {
   private String tokenSettings;
 
   public Client() {
+    this.clientIdIssuedAt = Instant.now();
   }
 
-  public Client(RegisteredClient registeredClient) {
-    this.id = registeredClient.getId();
-    this.clientId = registeredClient.getClientId();
-    this.clientIdIssuedAt = registeredClient.getClientIdIssuedAt();
-    this.clientSecret = registeredClient.getClientSecret();
-    this.clientSecretExpiresAt = registeredClient.getClientSecretExpiresAt();
-    this.clientName = registeredClient.getClientName();
-    if (!registeredClient.getClientAuthenticationMethods().isEmpty()) {
-      this.clientAuthenticationMethods = registeredClient.getClientAuthenticationMethods().stream()
-          .map(e -> e.getValue()).collect(Collectors.joining(","));
-      this.clientAuthenticationMethods = this.clientAuthenticationMethods.substring(1,
-          this.clientAuthenticationMethods.length() - 1);
-    }
-    if (!registeredClient.getAuthorizationGrantTypes().isEmpty()) {
-      this.authorizationGrantTypes = registeredClient.getAuthorizationGrantTypes().stream()
-          .map(e -> e.getValue()).collect(Collectors.joining(","));
-      this.authorizationGrantTypes = this.authorizationGrantTypes.substring(1,
-          this.authorizationGrantTypes.length() - 1);
-    }
-    if (!registeredClient.getRedirectUris().isEmpty()) {
-      this.redirectUris = registeredClient.getRedirectUris().stream().collect(Collectors.joining(","));
-      this.redirectUris = this.redirectUris.substring(1, this.redirectUris.length() - 1);
-    }
-    if (!registeredClient.getPostLogoutRedirectUris().isEmpty()) {
-      this.postLogoutRedirectUris = registeredClient.getPostLogoutRedirectUris().stream()
-          .collect(Collectors.joining(","));
-      this.postLogoutRedirectUris = this.postLogoutRedirectUris.substring(1, this.postLogoutRedirectUris.length() - 1);
-    }
-    if (!registeredClient.getScopes().isEmpty()) {
-      this.scopes = registeredClient.getScopes().stream().collect(Collectors.joining(","));
-      this.scopes = this.scopes.substring(1, this.scopes.length() - 1);
-    }
-    this.tokenSettings = registeredClient.getTokenSettings().toString();
+  @PrePersist
+  public void prePersist() {
+    if (this.clientIdIssuedAt == null)
+      this.clientIdIssuedAt = Instant.now();
   }
 
   public String getId() {

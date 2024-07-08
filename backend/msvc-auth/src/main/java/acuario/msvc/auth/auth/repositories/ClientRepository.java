@@ -13,5 +13,5 @@ public interface ClientRepository extends JpaRepository<Client, String> {
   Optional<Client> findByClientId(String clientId);
 
   @Query("SELECT count(c) FROM Client c WhERE c.clientId = :clientId")
-  Boolean verificarClient(String clientId);
+  Integer verificarClient(String clientId);
 }

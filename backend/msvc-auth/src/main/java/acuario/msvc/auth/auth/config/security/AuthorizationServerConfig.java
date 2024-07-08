@@ -56,7 +56,7 @@ public class AuthorizationServerConfig {
             .defaultAuthenticationEntryPointFor(
                 new LoginUrlAuthenticationEntryPoint("/login"),
                 new MediaTypeRequestMatcher(MediaType.TEXT_HTML)))
-        .cors(cors -> cors.configurationSource(corsConfigurationSource()))
+        // .cors(cors -> cors.configurationSource(corsConfigurationSource()))
         // Accept access tokens for User Info and/or Client Registration
         .oauth2ResourceServer((resourceServer) -> resourceServer
             .jwt(withDefaults()));

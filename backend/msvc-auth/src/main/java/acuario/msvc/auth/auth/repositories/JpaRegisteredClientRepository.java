@@ -40,19 +40,19 @@ public class JpaRegisteredClientRepository implements RegisteredClientRepository
 
   @Override
   public void save(RegisteredClient registeredClient) {
-    Assert.notNull(registeredClient, "registeredClient cannot be null");
+    Assert.notNull(registeredClient, "registeredClient no puede ser nulo");
     this.clientRepository.save(toEntity(registeredClient));
   }
 
   @Override
   public RegisteredClient findById(String id) {
-    Assert.hasText(id, "id cannot be empty");
+    Assert.hasText(id, "id no puede ser vacio");
     return this.clientRepository.findById(id).map(this::toObject).orElse(null);
   }
 
   @Override
   public RegisteredClient findByClientId(String clientId) {
-    Assert.hasText(clientId, "clientId cannot be empty");
+    Assert.hasText(clientId, "clientId no puede ser vacio");
     return this.clientRepository.findByClientId(clientId).map(this::toObject).orElse(null);
   }
 

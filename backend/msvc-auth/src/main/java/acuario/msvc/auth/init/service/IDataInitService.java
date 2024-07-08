@@ -11,4 +11,6 @@ public interface IDataInitService {
 
   Map<String, Object> cargarClientesInit();
 
+  void printParams();
+
 }

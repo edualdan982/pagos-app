@@ -21,7 +21,7 @@ spring:
             scope:
             - openid
             - read
-            client-name: msvc-client
+            client-name: mscv-client
             
         provider:
           spring:
