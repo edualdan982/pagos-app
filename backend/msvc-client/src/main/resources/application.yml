@@ -3,9 +3,7 @@ server:
 logging:
   level:
     root: INFO
-    '[org.springframework.web]': TRACE
-    '[org.springframework.security]': DEBUG
-    '[org.springframework.security.oauth2]': DEBUG
+    '[org.springframework.security]': TRACE
 spring:
   security:
     oauth2:
@@ -17,15 +15,14 @@ spring:
             client-id: msvc-client-id
             client-secret: pelota12
             authorization-grant-type: authorization_code
-            redirect-uri: "http://127.0.0.1:8091/authorized"
+            redirect-uri: http://127.0.0.1:8091/authorized
             scope:
-            - openid
-            - read
+              - openid
+              - read
             client-name: mscv-client
-            
         provider:
           spring:
-            issuer-uri: "http://127.0.0.1:9000"
+            issuer-uri: http://127.0.0.1:9000
       resourceserver:
         jwt:
-          issuer-uri: "http://127.0.0.1:9000"
+          issuer-uri: http://127.0.0.1:9000

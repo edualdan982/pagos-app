@@ -33,14 +33,16 @@ import com.nimbusds.jose.jwk.source.ImmutableJWKSet;
 import com.nimbusds.jose.jwk.source.JWKSource;
 import com.nimbusds.jose.proc.SecurityContext;
 
+import acuario.msvc.auth.auth.config.rsa.Jwks;
+
 @Configuration
 
 public class AuthorizationServerConfig {
 
   @Value("${jwt.public.key}")
-  RSAPublicKey key;
+  RSAPublicKey keyPub;
   @Value("${jwt.private.key}")
-  RSAPrivateKey priv;
+  RSAPrivateKey keyPrivate;
 
   @Bean
   @Order(Ordered.HIGHEST_PRECEDENCE)
@@ -52,13 +54,13 @@ public class AuthorizationServerConfig {
     http
         // Redirect to the login page when not authenticated from the
         // authorization endpoint
-        .exceptionHandling((exceptions) -> exceptions
+        .exceptionHandling(exceptions -> exceptions
             .defaultAuthenticationEntryPointFor(
                 new LoginUrlAuthenticationEntryPoint("/login"),
                 new MediaTypeRequestMatcher(MediaType.TEXT_HTML)))
         // .cors(cors -> cors.configurationSource(corsConfigurationSource()))
         // Accept access tokens for User Info and/or Client Registration
-        .oauth2ResourceServer((resourceServer) -> resourceServer
+        .oauth2ResourceServer(resourceServer -> resourceServer
             .jwt(withDefaults()));
     return http.build();
   }
@@ -73,10 +75,10 @@ public class AuthorizationServerConfig {
   }
 
   @Bean
-  JwtEncoder jwtEncoder() {
-    JWK jwk = new RSAKey.Builder(this.key).privateKey(this.priv).build();
-    JWKSource<SecurityContext> jwks = new ImmutableJWKSet<>(new JWKSet(jwk));
-    return new NimbusJwtEncoder(jwks);
+  public JWKSource<SecurityContext> jwkSource() {
+    RSAKey rsaKey = new RSAKey.Builder(this.keyPub).privateKey(this.keyPrivate).build();
+    JWKSet jwkSet = new JWKSet(rsaKey);
+    return (jwkSelector, securityContext) -> jwkSelector.select(jwkSet);
   }
 
   @Bean

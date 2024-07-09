@@ -34,7 +34,7 @@ public class UsuarioService implements IUsuarioService, UserDetailsService {
       log.info("Usuario login: {}", usuario.getUsuario());
 
       return new User(usuario.getUsuario(), usuario.getClave(), true, true, true, true,
-          Collections.singleton(new SimpleGrantedAuthority("ROLE_READ")));
+          Collections.singleton(new SimpleGrantedAuthority("SCOPE_read")));
     } catch (RuntimeException e) {
       String error = "Error en login, no existe el usuario " + username;
       log.error(e.getMessage() == null ? "Sin detalle del error." : e.getMessage());

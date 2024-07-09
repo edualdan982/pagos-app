@@ -38,18 +38,6 @@ public class SecurityConfig {
     return http.build();
   }
 
-  // Este es para probar de forma local con UserDetailsManager en mememoria
-  // @Bean
-  // public UserDetailsService userDetailsService() {
-  // UserDetails userDetails = User.builder()
-  // .username("edual")
-  // .password("{noop}123456")
-  // .roles("USER")
-  // .build();
-
-  // return new InMemoryUserDetailsManager(userDetails);
-  // }
-
   @Autowired
   protected void configure(AuthenticationManagerBuilder auth) throws Exception {
     auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());

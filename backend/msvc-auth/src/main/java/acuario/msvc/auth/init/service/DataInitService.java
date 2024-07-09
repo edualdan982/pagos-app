@@ -5,7 +5,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.time.Duration;
-import java.time.Instant;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -25,8 +24,6 @@ import org.springframework.security.oauth2.server.authorization.settings.ClientS
 import org.springframework.security.oauth2.server.authorization.settings.TokenSettings;
 import org.springframework.stereotype.Service;
 
-import acuario.msvc.auth.auth.entity.client.Client;
-import acuario.msvc.auth.auth.repositories.ClientRepository;
 import acuario.msvc.auth.auth.repositories.JpaRegisteredClientRepository;
 import acuario.msvc.auth.init.TypeQuerys;
 import jakarta.persistence.EntityManager;
@@ -148,7 +145,8 @@ public class DataInitService implements IDataInitService {
         .redirectUri("http://127.0.0.1:8091/authorized")
         .postLogoutRedirectUri("http://127.0.0.1:8091/logout")
         .scope("read")
-        // .scope("write")
+        .scope("write")
+        .scope("pagos")
         .scope(OidcScopes.OPENID)
         .scope(OidcScopes.PROFILE)
         .clientSettings(ClientSettings.builder().requireAuthorizationConsent(false).build())

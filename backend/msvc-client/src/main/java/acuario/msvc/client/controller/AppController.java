@@ -10,12 +10,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import acuario.msvc.client.models.Message;
 
 @RestController
+@RequestMapping("/api")
 public class AppController {
   private static final Logger log = LoggerFactory.getLogger(AppController.class);
 
@@ -30,12 +32,5 @@ public class AppController {
     return message;
   }
 
-  @GetMapping("/authorized")
-  public Map<String, Object> authorized(@RequestParam String code, @RequestParam String state) {
-    Map<String, Object> response = new HashMap<>();
-    response.put("code", code);
-    response.put("state", state);
-    return response;
-  }
 
 }
