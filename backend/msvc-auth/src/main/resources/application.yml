@@ -3,7 +3,7 @@ server:
 logging:
   level:
     root: INFO
-    '[org.springframework.web]': TRACE
+    '[org.springframework.web]': ERROR
     '[org.springframework.security]': DEBUG
     '[org.springframework.security.oauth2]': DEBUG
 # Propiedades personalizadas

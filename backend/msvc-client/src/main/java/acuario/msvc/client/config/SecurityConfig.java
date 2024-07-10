@@ -24,8 +24,8 @@ public class SecurityConfig {
     http.authorizeHttpRequests(
         requests -> requests
             .requestMatchers("/authorized").permitAll()
-            .requestMatchers(HttpMethod.GET, "/list").hasAnyAuthority(SCOPE_WRITE, SCOPE_READ)
-            .requestMatchers(HttpMethod.POST, "/create").hasAuthority(SCOPE_WRITE)
+            .requestMatchers(HttpMethod.GET, "/api/list").hasAnyAuthority(SCOPE_WRITE, SCOPE_READ)
+            .requestMatchers(HttpMethod.POST, "/api/create").hasAuthority(SCOPE_WRITE)
             .anyRequest().authenticated())
         .csrf(csrf -> csrf.disable())
         // .cors(cors -> cors.disable())

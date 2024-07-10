@@ -158,7 +158,7 @@ public class DataInitService implements IDataInitService {
     RegisteredClient pagosApp = RegisteredClient.withId(uuid)
         .clientId("msvc-pagos-id")
         .clientName("msvc-pagos")
-        .clientSecret("{noop}123456")
+        .clientSecret("$2a$10$8/jOZCRJ7hnAb8reB3AasusguXNXhL6Dg..NdjtbwYRNet6ZysEDq")
         // .tokenSettings(tokenSettings())
         .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
         .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
@@ -174,6 +174,24 @@ public class DataInitService implements IDataInitService {
 
     jpaRegisteredClientRepository.save(pagosApp);
     result.put("pagos-app", "Este cliente a sido registrado");
+
+    uuid = "auth-debugger-default-0003";
+    RegisteredClient authDebugger = RegisteredClient.withId(uuid)
+        .clientId("auth-debugger-id")
+        .clientName("auth-debugger")
+        .clientSecret("$2a$10$8/jOZCRJ7hnAb8reB3AasusguXNXhL6Dg..NdjtbwYRNet6ZysEDq")
+        .tokenSettings(tokenSettings())
+        .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
+        .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
+        .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
+        .redirectUri("https://oauthdebugger.com/debug")
+        .postLogoutRedirectUri("http://127.0.0.1:8090/logout")
+        .scope("read")
+        .scope(OidcScopes.OPENID)
+        .scope(OidcScopes.PROFILE)
+        .build();
+    jpaRegisteredClientRepository.save(authDebugger);
+    result.put("auth-debugger", "Este cliente a sido registrado");
 
     return result;
   }
