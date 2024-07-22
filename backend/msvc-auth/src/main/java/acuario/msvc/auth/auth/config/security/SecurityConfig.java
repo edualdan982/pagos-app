@@ -10,6 +10,9 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
+
+import acuario.msvc.auth.auth.federation.FederatedIdentityAuthenticationSuccessHandler;
 
 @Configuration
 @EnableWebSecurity
@@ -27,15 +30,20 @@ public class SecurityConfig {
   public SecurityFilterChain webSecurityFilterChain(HttpSecurity http)
       throws Exception {
     http
-        .authorizeHttpRequests((authorize) -> authorize
+        .authorizeHttpRequests(authorize -> authorize
+            .requestMatchers("assets/**", "/login").permitAll()
             .anyRequest().authenticated())
-        // Form login handles the redirect to the login page from the
-        // authorization server filter chain
+        .formLogin(formLogin -> formLogin.loginPage("/login"))
+        .oauth2Login(oauth2Login -> oauth2Login.loginPage("/login").successHandler(authenticationSuccessHandler()))
         .csrf(csrf -> csrf.disable())
         .formLogin(Customizer.withDefaults())
         .cors(cors -> cors.disable());
 
     return http.build();
+  }
+
+  private AuthenticationSuccessHandler authenticationSuccessHandler() {
+    return new FederatedIdentityAuthenticationSuccessHandler();
   }
 
   @Autowired

@@ -32,6 +32,7 @@ import com.nimbusds.jose.proc.SecurityContext;
 @Configuration
 
 public class AuthorizationServerConfig {
+  private static final String CUSTOM_CONSENT_PAGE_URI = "/oauth2/consent";
 
   @Value("${jwt.public.key}")
   RSAPublicKey keyPub;
