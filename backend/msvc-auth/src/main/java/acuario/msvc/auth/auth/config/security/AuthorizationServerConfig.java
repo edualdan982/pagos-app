@@ -14,6 +14,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.http.MediaType;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.oauth2.jwt.JwtDecoder;
+import org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository;
 import org.springframework.security.oauth2.server.authorization.config.annotation.web.configuration.OAuth2AuthorizationServerConfiguration;
 import org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer;
 import org.springframework.security.oauth2.server.authorization.settings.AuthorizationServerSettings;
@@ -41,20 +42,28 @@ public class AuthorizationServerConfig {
 
   @Bean
   @Order(Ordered.HIGHEST_PRECEDENCE)
-  public SecurityFilterChain authorizationServerSecurityFilterChain(HttpSecurity http)
+  public SecurityFilterChain authorizationServerSecurityFilterChain(HttpSecurity http,
+      RegisteredClientRepository registeredClientRepository)
       throws Exception {
     OAuth2AuthorizationServerConfiguration.applyDefaultSecurity(http);
+
     http.getConfigurer(OAuth2AuthorizationServerConfigurer.class)
+        .deviceVerificationEndpoint(
+            deviceVerificationEndpoint -> deviceVerificationEndpoint.consentPage(CUSTOM_CONSENT_PAGE_URI))
+        .authorizationEndpoint(authorizationEndpoint -> authorizationEndpoint.consentPage(CUSTOM_CONSENT_PAGE_URI))
         .oidc(withDefaults()); // Enable OpenID Connect 1.0
     http
-        // Redirect to the login page when not authenticated from the
-        // authorization endpoint
+        // Redirige a la página de inicio de sesión cuando no está autenticado desde el
+        // punto final de autorización
         .exceptionHandling(exceptions -> exceptions
             .defaultAuthenticationEntryPointFor(
                 new LoginUrlAuthenticationEntryPoint("/login"),
                 new MediaTypeRequestMatcher(MediaType.TEXT_HTML)))
+        // Posible para configurar el cors para los clientes
         // .cors(cors -> cors.configurationSource(corsConfigurationSource()))
-        // Accept access tokens for User Info and/or Client Registration
+
+        // Acepta tokens de acceso para User Info y/o Client Registration (Servidor de
+        // recursos por defecto)
         .oauth2ResourceServer(resourceServer -> resourceServer
             .jwt(withDefaults()));
     return http.build();
