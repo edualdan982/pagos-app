@@ -31,7 +31,7 @@ public class SecurityConfig {
       throws Exception {
     http
         .authorizeHttpRequests(authorize -> authorize
-            .requestMatchers("assets/**", "/login").permitAll()
+            .requestMatchers("/assets/**", "/login").permitAll()
             .anyRequest().authenticated())
         .formLogin(formLogin -> formLogin.loginPage("/login"))
         .oauth2Login(oauth2Login -> oauth2Login.loginPage("/login").successHandler(authenticationSuccessHandler()))
